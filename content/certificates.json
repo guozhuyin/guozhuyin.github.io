@@ -1,0 +1,74 @@
+[
+  {
+    "issuer": "",
+    "date": "",
+    "imageZh": "",
+    "imageEn": "uploads/certificate-mos-excel.svg",
+    "note": {
+      "zh": "",
+      "en": ""
+    },
+    "officialName": "MOS Excel",
+    "originalLanguage": "en"
+  },
+  {
+    "issuer": "",
+    "date": "",
+    "imageZh": "",
+    "imageEn": "uploads/certificate-acp-video-design.svg",
+    "note": {
+      "zh": "",
+      "en": ""
+    },
+    "officialName": "ACP Video Design（Photoshop 與 Premiere）",
+    "originalLanguage": "zh-Hant"
+  },
+  {
+    "issuer": "",
+    "date": "",
+    "imageZh": "",
+    "imageEn": "uploads/certificate-tqc-web-scraping.svg",
+    "note": {
+      "zh": "",
+      "en": ""
+    },
+    "officialName": "TQC+ 網頁資料擷取與分析 Python 3",
+    "originalLanguage": "zh-Hant"
+  },
+  {
+    "issuer": "",
+    "date": "",
+    "imageZh": "",
+    "imageEn": "uploads/certificate-tqc-python.svg",
+    "note": {
+      "zh": "",
+      "en": ""
+    },
+    "officialName": "TQC+ 程式語言 Python 3",
+    "originalLanguage": "zh-Hant"
+  },
+  {
+    "issuer": "",
+    "date": "",
+    "imageZh": "",
+    "imageEn": "uploads/certificate-mta-html5.svg",
+    "note": {
+      "zh": "",
+      "en": ""
+    },
+    "officialName": "MTA HTML5 Application Development Fundamentals",
+    "originalLanguage": "en"
+  },
+  {
+    "issuer": "",
+    "date": "",
+    "imageZh": "",
+    "imageEn": "uploads/certificate-ciw-web-security.jpg",
+    "note": {
+      "zh": "",
+      "en": ""
+    },
+    "officialName": "CIW Web Security Associate",
+    "originalLanguage": "en"
+  }
+]

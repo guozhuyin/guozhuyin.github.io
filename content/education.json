@@ -1,0 +1,118 @@
+[
+  {
+    "early": false,
+    "title": {
+      "zh": "網路學習科技研究所｜碩士",
+      "en": "Graduate Institute of Network Learning Technology · Master’s degree"
+    },
+    "organization": {
+      "zh": "國立中央大學",
+      "en": "National Central University"
+    },
+    "date": "2023–2026",
+    "description": {
+      "zh": "已畢業。研究所階段聚焦研究方法、學習科技與 AI 系統實作；碩士論文獨立完成學生以圖畫與文字和 AI 互動、進行數學問題解決的網頁系統。",
+      "en": "Completed. Graduate study focused on research methods, learning technologies, and AI system implementation. My master’s thesis independently delivered a web system in which students use drawings and text to interact with AI for mathematics problem solving."
+    },
+    "location": {
+      "zh": "桃園，臺灣",
+      "en": "Taoyuan, Taiwan"
+    },
+    "links": [
+      {
+        "label": {
+          "zh": "網路學習科技研究所網站",
+          "en": "Graduate Institute website"
+        },
+        "url": "https://www.lst.ncu.edu.tw/NLT_new/index.php"
+      }
+    ],
+    "proofTitle": {
+      "zh": "",
+      "en": ""
+    },
+    "proofImageZh": "",
+    "proofImageEn": "",
+    "proofImageAlt": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "early": false,
+    "title": {
+      "zh": "行動商務與多媒體應用學系｜雙主修資訊工程學系",
+      "en": "M-Commerce and Multimedia Application · Double major in Computer Science and Information Engineering"
+    },
+    "organization": {
+      "zh": "亞洲大學",
+      "en": "Asia University"
+    },
+    "date": "2019–2023",
+    "description": {
+      "zh": "大學階段完成學士學業。參與數位教育遊戲專題、研討會論文發表與 AI 影像辨識競賽。\n\n課程與專案涵蓋網頁建置、程式設計、資料庫、人工智慧、Unity／XR、多媒體與數位學習，也接觸 CRM、ERP、MIS 等資訊系統的基本用途與差異。",
+      "en": "During my undergraduate study, I completed the degree and took part in a digital educational game project, conference publications, and an AI image-recognition competition.\n\nCoursework and projects covered web development, programming, databases, artificial intelligence, Unity/XR, multimedia, and digital learning, alongside introductory concepts of CRM, ERP, and MIS and their different purposes."
+    },
+    "location": {
+      "zh": "臺中，臺灣",
+      "en": "Taichung, Taiwan"
+    },
+    "links": [
+      {
+        "label": {
+          "zh": "行動商務與多媒體應用學系網站",
+          "en": "M-Commerce and Multimedia Application"
+        },
+        "url": "https://mcma.asia.edu.tw/"
+      },
+      {
+        "label": {
+          "zh": "資訊工程學系網站",
+          "en": "Computer Science and Information Engineering"
+        },
+        "url": "https://csie.asia.edu.tw/"
+      }
+    ],
+    "proofTitle": {
+      "zh": "",
+      "en": ""
+    },
+    "proofImageZh": "",
+    "proofImageEn": "",
+    "proofImageAlt": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "early": true,
+    "title": {
+      "zh": "大學以前（K–12）",
+      "en": "Before university (K–12)"
+    },
+    "organization": {
+      "zh": "湖口高中、民雄國中、民雄國小",
+      "en": "Hukou High School · Minsyong Junior High School · Minsyong Elementary School"
+    },
+    "date": "2007–2019",
+    "description": {
+      "zh": "高中開始接觸網站與程式學習，並建立個人部落格；這是後續投入網頁與資訊技術的起點。",
+      "en": "I began exploring websites and programming in high school and built a personal blog, which became the starting point for my later work in web and information technology."
+    },
+    "location": {
+      "zh": "",
+      "en": ""
+    },
+    "links": [],
+    "proofTitle": {
+      "zh": "",
+      "en": ""
+    },
+    "proofImageZh": "",
+    "proofImageEn": "",
+    "proofImageAlt": {
+      "zh": "",
+      "en": ""
+    }
+  }
+]
