@@ -1,0 +1,294 @@
+{
+  "brand": {
+    "zh": "個人網站",
+    "en": "Personal website"
+  },
+  "skip": {
+    "zh": "跳到主要內容",
+    "en": "Skip to content"
+  },
+  "theme": {
+    "zh": "外觀",
+    "en": "Appearance"
+  },
+  "system": {
+    "zh": "跟隨系統",
+    "en": "System"
+  },
+  "light": {
+    "zh": "明亮",
+    "en": "Light"
+  },
+  "dark": {
+    "zh": "暗黑",
+    "en": "Dark"
+  },
+  "work": {
+    "zh": "精選作品",
+    "en": "Selected projects"
+  },
+  "workIntro": {
+    "zh": "從研究問題，到可互動的工具。",
+    "en": "From research questions to interactive tools."
+  },
+  "all": {
+    "zh": "所有作品",
+    "en": "All projects"
+  },
+  "about": {
+    "zh": "關於我",
+    "en": "About"
+  },
+  "read": {
+    "zh": "閱讀專案",
+    "en": "Explore project"
+  },
+  "writing": {
+    "zh": "文章與觀察",
+    "en": "Notes & observations"
+  },
+  "writingIntro": {
+    "zh": "記錄開發、科技與生活裡值得留下的事。",
+    "en": "Things worth keeping from technology, projects, and everyday life."
+  },
+  "writingSourceNote": {
+    "zh": "完整與最新文章仍在 WordPress；這裡只整理少量精選入口。",
+    "en": "The complete and latest posts remain on WordPress; this page keeps only a small curated set."
+  },
+  "openBlog": {
+    "zh": "前往部落格",
+    "en": "Visit the blog"
+  },
+  "source": {
+    "zh": "原始碼",
+    "en": "Source code"
+  },
+  "demo": {
+    "zh": "觀看展示",
+    "en": "View demo"
+  },
+  "paper": {
+    "zh": "論文原文",
+    "en": "Original paper"
+  },
+  "role": {
+    "zh": "我的角色",
+    "en": "My contribution"
+  },
+  "period": {
+    "zh": "期間",
+    "en": "Period"
+  },
+  "tech": {
+    "zh": "技術與主題",
+    "en": "Technologies & topics"
+  },
+  "back": {
+    "zh": "返回作品",
+    "en": "Back to projects"
+  },
+  "contents": {
+    "zh": "本頁內容",
+    "en": "On this page"
+  },
+  "experience": {
+    "zh": "教學與活動經歷",
+    "en": "Teaching & activities"
+  },
+  "education": {
+    "zh": "學歷",
+    "en": "Education"
+  },
+  "earlyEducation": {
+    "zh": "早期教育（K–12）",
+    "en": "Early education (K–12)"
+  },
+  "earlyEducationNote": {
+    "zh": "保留完整教育背景；求職閱讀時可按需要展開。",
+    "en": "Included for completeness; expand when you want the full education history."
+  },
+  "certificates": {
+    "zh": "證照",
+    "en": "Certificates"
+  },
+  "skills": {
+    "zh": "學習與使用過的技術",
+    "en": "Technologies I have learned and used"
+  },
+  "life": {
+    "zh": "旅遊與生活",
+    "en": "Travel & life"
+  },
+  "contact": {
+    "zh": "保持聯繫",
+    "en": "Get in touch"
+  },
+  "contactText": {
+    "zh": "歡迎透過以下方式認識我。",
+    "en": "Find me through the links below."
+  },
+  "noContact": {
+    "zh": "聯絡方式待補充",
+    "en": "Contact details to be added"
+  },
+  "emptyArticles": {
+    "zh": "文章整理中",
+    "en": "Writing, collected here soon"
+  },
+  "emptyArticlesText": {
+    "zh": "這裡將整理技術實作、科技觀察與單車生活的精選文章。",
+    "en": "Selected posts on technical projects, technology observations, and life on a bicycle will appear here."
+  },
+  "readArticle": {
+    "zh": "閱讀原文",
+    "en": "Read the article"
+  },
+  "resume": {
+    "zh": "履歷",
+    "en": "Résumé"
+  },
+  "print": {
+    "zh": "列印／另存 PDF",
+    "en": "Print / save PDF"
+  },
+  "toTop": {
+    "zh": "回到頂端",
+    "en": "Back to top"
+  },
+  "pending": {
+    "zh": "資料待補充",
+    "en": "Details to be added"
+  },
+  "translation": {
+    "zh": "一般內容可切換語言；論文、作者與證書保留原文。",
+    "en": "Switch languages for general content. Publications, authors, and certificates retain their original wording."
+  },
+  "footer": {
+    "zh": "持續學習，也持續記錄。",
+    "en": "Always learning. Always taking notes."
+  },
+  "projectsIntro": {
+    "zh": "透過網頁、遊戲與虛擬情境，探索技術的實際應用。",
+    "en": "Exploring practical applications of technology through web tools, games, and virtual environments."
+  },
+  "enOnly": {
+    "zh": "英文版證書",
+    "en": "English certificate"
+  },
+  "fallback": {
+    "zh": "此段暫以原文呈現。",
+    "en": "This section is temporarily shown in its original language."
+  },
+  "next": {
+    "zh": "下一個作品",
+    "en": "Next project"
+  },
+  "index": {
+    "zh": "作品目錄",
+    "en": "Project index"
+  },
+  "publications": {
+    "zh": "論文發表",
+    "en": "Publications"
+  },
+  "awards": {
+    "zh": "競賽成果",
+    "en": "Competition results"
+  },
+  "tools": {
+    "zh": "開發與創作工具",
+    "en": "Development & creative tools"
+  },
+  "moreProjects": {
+    "zh": "更多作品入口",
+    "en": "More work to explore"
+  },
+  "related": {
+    "zh": "相關作品",
+    "en": "Related project"
+  },
+  "resultLink": {
+    "zh": "查看成果",
+    "en": "View result"
+  },
+  "navHome": {
+    "zh": "首頁",
+    "en": "Home"
+  },
+  "navProjects": {
+    "zh": "作品",
+    "en": "Projects"
+  },
+  "navAbout": {
+    "zh": "關於我",
+    "en": "About"
+  },
+  "navWriting": {
+    "zh": "文章",
+    "en": "Writing"
+  },
+  "switchLight": {
+    "zh": "切換至明亮模式",
+    "en": "Switch to light mode"
+  },
+  "switchDark": {
+    "zh": "切換至暗黑模式",
+    "en": "Switch to dark mode"
+  },
+  "darkMode": {
+    "zh": "暗黑模式",
+    "en": "Dark mode"
+  },
+  "languages": {
+    "zh": "選擇語言",
+    "en": "Choose a language"
+  },
+  "languageFallback": {
+    "zh": "部分內容尚未提供此語言版本，以下保留已提供的原文。",
+    "en": "Some content is not yet available in this language. The supplied original is shown below."
+  },
+  "original": {
+    "zh": "原文",
+    "en": "Original"
+  },
+  "certZh": {
+    "zh": "中文版證書",
+    "en": "Chinese certificate"
+  },
+  "certEn": {
+    "zh": "英文版證書",
+    "en": "English certificate"
+  },
+  "publicationNote": {
+    "zh": "論文題名與作者依原文列示。",
+    "en": "Paper titles and authors are shown in their original language."
+  },
+  "mainNav": {
+    "zh": "主要導覽",
+    "en": "Main navigation"
+  },
+  "aboutHeading": {
+    "zh": "好奇心是起點，\n實際做過的事是累積。",
+    "en": "Curiosity starts it.\nPractice makes it real."
+  },
+  "aboutIntro": {
+    "zh": "從網頁與互動遊戲，到兒童營隊和單車旅程。持續學習，也把不同場域的經驗帶回開發與思考之中。",
+    "en": "From web applications and interactive games to children’s camps and cycling trips. Learning across settings, and bringing those experiences back into what I build."
+  },
+  "lifeHeading": {
+    "zh": "把好奇心帶上路，\n在不同地方學習。",
+    "en": "Take curiosity on the road,\nkeep learning in new places."
+  },
+  "writingHeading": {
+    "zh": "記錄，也是整理思考。",
+    "en": "Writing to think clearly."
+  },
+  "projectEvidence": {
+    "zh": "專案與實作",
+    "en": "Projects and implementation"
+  },
+  "expandPublications": {
+    "zh": "展開完整論文列表",
+    "en": "View all publications"
+  }
+}

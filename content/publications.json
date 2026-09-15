@@ -1,0 +1,170 @@
+[
+  {
+    "originalTitle": "從溫暖的夥伴到得力的教練：為小學生設計一款人性化的AI閱讀同伴",
+    "authors": "郭銍恩、廖長彥、陳德懷",
+    "originalLanguage": "zh-Hant",
+    "venue": "Global Chinese Conference on Computers in Education",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2026",
+    "summary": {
+      "zh": "以人本主義與人機關係發展為基礎，設計能隨互動歷程調整角色的 AI 閱讀同伴，兼顧情感支持與閱讀引導。研究在 7 名五年級學生中進行四週初步導入，並以一名持續使用者分析關係發展歷程；結果屬小規模探索，尚不能推論長期成效。",
+      "en": "Designed an AI reading companion that adapts its role across stages of human–AI relationship development, balancing emotional support and reading guidance. A four-week pilot involved seven fifth graders, with an in-depth analysis of one sustained user. The findings are exploratory and do not establish long-term effectiveness."
+    },
+    "url": "",
+    "project": "",
+    "location": {
+      "zh": "香港，中國",
+      "en": "Hong Kong, China"
+    }
+  },
+  {
+    "originalTitle": "基於情境工程之長期適性化AI閱讀同伴系統設計",
+    "authors": "郭銍恩、廖長彥、陳德懷",
+    "originalLanguage": "zh-Hant",
+    "venue": "Taiwan E-Learning Forum",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2026",
+    "summary": {
+      "zh": "建構以學生模型、情境工程與多代理協作為核心的 AI 閱讀同伴，整合閱讀紀錄、對話及長期摘要，動態調整互動階段與回應策略。介面結合虛擬角色、語音文字與資訊儀表板，呈現系統如何延續個人閱讀脈絡與陪伴關係。",
+      "en": "Presented an AI reading companion built around a student model, context engineering, and cooperating agents. Reading records, conversations, and long-term summaries inform interaction stages and response strategies. An avatar, voice and text interaction, and dashboards make the evolving reading context and companion relationship visible."
+    },
+    "url": "",
+    "project": "",
+    "location": {
+      "zh": "南投，臺灣",
+      "en": "Nantou, Taiwan"
+    }
+  },
+  {
+    "originalTitle": "AI閱讀遊戲：結合AI打造多角色線上互動平台提升閱讀動機",
+    "authors": "郭銍恩、廖長彥、葉彥呈、陳德懷",
+    "originalLanguage": "zh-Hant",
+    "venue": "Global Chinese Conference on Computers in Education",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2025",
+    "summary": {
+      "zh": "設計結合 Azure AI 的多人線上閱讀遊戲，讓學生與 AI 動物同伴合作、參與競爭，並接受 AI 關主回饋。論文整理互動角色與遊戲機制，規劃以問卷及對話分析評估閱讀動機；文件以系統設計與研究規劃為主。",
+      "en": "Designed a multiplayer reading game using Azure AI, with AI animal companions, cooperation and competition, and feedback from an AI game host. The paper describes roles and game mechanics and plans questionnaire and conversation analyses of reading motivation. It primarily reports system design and a research plan."
+    },
+    "url": "",
+    "project": "",
+    "location": {
+      "zh": "無錫，中國",
+      "en": "Wuxi, China"
+    }
+  },
+  {
+    "originalTitle": "探討家庭閱讀對學生互動和學習行為的影響",
+    "authors": "郭銍恩、廖長彥、陳德懷",
+    "originalLanguage": "zh-Hant",
+    "venue": "Taiwan E-Learning Forum",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2025",
+    "summary": {
+      "zh": "以無縫學習理念設計親師生閱讀社群平台，整合書籍登記、閱讀照片、說書影片、聊書與回饋，串連家庭與學校的閱讀活動。平台透過共享紀錄支持協作，並規劃分析閱讀習慣及互動模式；當時資料仍有限，成效尚待後續研究。",
+      "en": "Designed a parent–teacher–student reading community connecting home and school through book registration, reading photos, book-talk videos, discussions, and feedback. Shared records support collaboration, with planned analyses of reading habits and interaction patterns. Data were still limited, so effectiveness remained to be studied."
+    },
+    "url": "",
+    "project": "",
+    "location": {
+      "zh": "嘉義，臺灣",
+      "en": "Chiayi, Taiwan"
+    }
+  },
+  {
+    "originalTitle": "支持學生於沉浸式虛擬實境社交互動並結合STEM與SDGs的學習環境開發",
+    "authors": "郭銍恩、陳政煥",
+    "originalLanguage": "zh-Hant",
+    "venue": "Global Chinese Conference on Computers in Education",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2024",
+    "summary": {
+      "zh": "以 VRChat 開發結合 STEM 與 SDGs 的沉浸式學習環境，支持國中學生透過頭戴裝置進行多人交流與任務探索。以「氣候行動」串連海平面上升、溫室效應與能源科技，運用互動物件及多媒體呈現學習情境；重點為環境設計與開發。",
+      "en": "Developed a VRChat learning environment integrating STEM and the SDGs for junior-high students using head-mounted displays. The Climate Action theme connects sea-level rise, the greenhouse effect, and energy technology through interactive objects, multimedia, and social discussion. The contribution centers on environment design and development."
+    },
+    "url": "",
+    "project": "unity-sustainability",
+    "location": {
+      "zh": "重慶，中國",
+      "en": "Chongqing, China"
+    }
+  },
+  {
+    "originalTitle": "紙筆遊戲不僅是遊戲：探討非數位國小數學教育的遊戲式學習",
+    "authors": "郭銍恩、陳德懷",
+    "originalLanguage": "zh-Hant",
+    "venue": "Global Chinese Conference on Computers in Education",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2024",
+    "summary": {
+      "zh": "探討把三款低成本紙筆遊戲融入國小三、四年級數學教學的研究設計。規劃比較遊戲融入與傳統教學，透過學習興趣、自我效能量表、問卷及訪談了解差異；論文提出研究方法，未將預期效果當成已完成驗證。",
+      "en": "Proposed a study integrating three low-cost paper-and-pencil games into mathematics lessons for third and fourth graders. The design compares game-supported and conventional teaching using interest and self-efficacy measures, questionnaires, and interviews. The paper presents a research method, rather than verified learning gains."
+    },
+    "url": "",
+    "project": "",
+    "location": {
+      "zh": "重慶，中國",
+      "en": "Chongqing, China"
+    }
+  },
+  {
+    "originalTitle": "Supporting Teacher-Student Book Talk and Book Wish Lists with AI-Driven Technology",
+    "authors": "Chih-En Kuo, Hong-Min Tu, Chang-Yen Liao and Tak-Wai Chan",
+    "originalLanguage": "en",
+    "venue": "International Conference on Computers in Education",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2024",
+    "summary": {
+      "zh": "透過教師訪談與設計研究，將閱讀願望清單、閱讀歷程及師生聊書紀錄整合為數位系統，再加入 AI 輔助整理與提問建議。研究以五位教師的回饋檢視使用經驗，呈現紀錄管理與聊書支援的價值，也保留新增內容管理負擔等意見。",
+      "en": "Used teacher interviews and design-based research to digitize book wish lists, reading histories, and teacher–student book-talk records, with AI support for processing conversations and suggesting follow-up questions. Feedback from five teachers described benefits for record management and book-talk support, alongside additional content-management work."
+    },
+    "url": "",
+    "project": "",
+    "location": {
+      "zh": "馬尼拉，菲律賓",
+      "en": "Manila, Philippines"
+    }
+  },
+  {
+    "originalTitle": "以類比學習為基礎開發之國中生物與健康跨領域角色扮演遊戲",
+    "authors": "郭銍恩、顧尚萱、陳政煥",
+    "originalLanguage": "zh-Hant",
+    "venue": "Taiwan E-Learning Forum (TWELF 2023)",
+    "kind": {
+      "zh": "研討會論文",
+      "en": "Conference paper"
+    },
+    "date": "2023-03",
+    "summary": {
+      "zh": "開發結合國中生物與健康教育的角色扮演遊戲，透過故事、場景類比及任務串連營養、運輸、協調與恆定等學習內容。論文介紹跨領域教材如何轉化為遊戲情境，是「夢健新生／BioUtopia」專題的研究呈現。",
+      "en": "Developed an interdisciplinary role-playing game connecting junior-high biology and health education. Stories, analogous scenes, and tasks address nutrition, transport, coordination, and homeostasis. The paper explains how curriculum content becomes a game environment and presents the research behind Dreaming about Health and Biology / BioUtopia."
+    },
+    "url": "https://drive.google.com/file/d/1n2QLw89tUAGv2QOhO-JWHLrrvWyK0rJz/view?usp=sharing",
+    "project": "learning-game",
+    "location": {
+      "zh": "屏東，臺灣",
+      "en": "Pingtung, Taiwan"
+    }
+  }
+]

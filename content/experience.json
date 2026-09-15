@@ -1,0 +1,78 @@
+[
+  {
+    "title": {
+      "zh": "兒童程式營隊助教",
+      "en": "Programming camp teaching assistant"
+    },
+    "organization": {
+      "zh": "壞主意有限公司｜猿創立兒童程式營隊",
+      "en": "Coding Ape programming camps"
+    },
+    "date": "2020 -",
+    "description": {
+      "zh": "猿創立提供兒童程式設計營隊，透過 Minecraft、Python 與 APCS 相關課程，讓學生在操作與任務中接觸程式設計。\n\n擔任營隊助教，協助學生理解題目、操作程式與完成學習任務，依不同年齡和學習進度提供協助。",
+      "en": "Coding Ape offers children’s programming camps involving Minecraft, Python, and APCS-related learning through hands-on activities and tasks.\n\nAs a teaching assistant, I helped students understand questions, work with programs, and complete learning tasks, adapting support to different ages and learning progress."
+    },
+    "location": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "title": {
+      "zh": "兒童營隊助教",
+      "en": "Children’s camp teaching assistant"
+    },
+    "organization": {
+      "zh": "粘巴達假日學校",
+      "en": "Nianbada Childhood School"
+    },
+    "date": "2019 -",
+    "description": {
+      "zh": "粘巴達假日學校以兒童遊戲與戶外體驗為核心，在新竹竹北的樹屋遊戲空間，透過傳統遊戲、自然活動與動手搭建，讓孩子在玩樂中探索與合作。\n\n擔任兒童營隊助教，陪伴不同年齡的學生完成團隊任務，協助大地遊戲及戶外活動，累積活動帶領與現場溝通經驗。",
+      "en": "Nianbada Childhood School focuses on children’s play and outdoor experiences. Its Treetopia play space in Zhubei, Hsinchu brings together traditional games, nature activities, and hands-on building to encourage exploration and cooperation.\n\nAs a camp teaching assistant, I supported mixed-age groups in team tasks, outdoor games, and activities, developing experience in facilitation and communication."
+    },
+    "location": {
+      "zh": "新竹，臺灣",
+      "en": "Hsinchu, Taiwan"
+    }
+  },
+  {
+    "title": {
+      "zh": "兒童營隊活動員",
+      "en": "Children’s camp activity staff"
+    },
+    "organization": {
+      "zh": "人本基金會",
+      "en": "Humanistic Education Foundation"
+    },
+    "date": "",
+    "description": {
+      "zh": "參與人本基金會的兒童營隊，在戶外活動與團隊任務中陪伴學生探索、合作及完成挑戰。擔任活動員，協助活動執行與學生陪伴，累積帶領兒童與處理現場需求的經驗。",
+      "en": "Participated in children’s camps with the Humanistic Education Foundation, supporting exploration, cooperation, and challenges through outdoor activities and group tasks. As an activity staff member, I supported camp delivery and accompanied students, developing experience in working with children and responding to on-site needs."
+    },
+    "location": {
+      "zh": "",
+      "en": ""
+    }
+  },
+  {
+    "title": {
+      "zh": "兒童閱讀志工",
+      "en": "Children’s reading volunteer"
+    },
+    "organization": {
+      "zh": "教會",
+      "en": "Church"
+    },
+    "date": "",
+    "description": {
+      "zh": "參與教會的兒童陪讀服務，透過閱讀陪伴與互動，協助孩子投入學習，累積與兒童溝通及觀察不同學習需求的經驗。",
+      "en": "Volunteered in church-based children’s reading activities, using reading support and interaction to help children engage with learning while developing communication skills and awareness of different learning needs."
+    },
+    "location": {
+      "zh": "",
+      "en": ""
+    }
+  }
+]

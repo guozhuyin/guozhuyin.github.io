@@ -1,0 +1,18 @@
+[
+  {
+    "id": "zh",
+    "locale": "zh-Hant",
+    "label": "繁體中文",
+    "enabled": true,
+    "fallback": "en",
+    "direction": "ltr"
+  },
+  {
+    "id": "en",
+    "locale": "en",
+    "label": "English",
+    "enabled": true,
+    "fallback": "zh",
+    "direction": "ltr"
+  }
+]

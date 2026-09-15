@@ -1,0 +1,35 @@
+[
+  {
+    "title": {
+      "zh": "大學時期程式庫 · Zhuyin.Asia",
+      "en": "University-era repository · Zhuyin.Asia"
+    },
+    "summary": {
+      "zh": "過往程式作品的 GitHub 入口。",
+      "en": "A GitHub entry point for earlier programming work."
+    },
+    "url": "https://github.com/GuoZhuyin/Zhuyin.Asia"
+  },
+  {
+    "title": {
+      "zh": "CoSpaces 作品",
+      "en": "CoSpaces creation"
+    },
+    "summary": {
+      "zh": "過往互動作品連結。",
+      "en": "A link to an earlier interactive creation."
+    },
+    "url": "https://edu.cospaces.io/DYF-HXW"
+  },
+  {
+    "title": {
+      "zh": "其他網站作品",
+      "en": "Earlier website project"
+    },
+    "summary": {
+      "zh": "過往製作的網站入口。",
+      "en": "An entry point to an earlier website project."
+    },
+    "url": "http://onclass.mypressonline.com/"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "title": {
+      "zh": "TAECT 數位媒體實作競賽",
+      "en": "TAECT digital media competition"
+    },
+    "result": {
+      "zh": "第四名",
+      "en": "Fourth place"
+    },
+    "date": "2022",
+    "description": {
+      "zh": "數位教育遊戲專題「夢健新生」。",
+      "en": "Digital educational game project: Dreaming about Health and Biology."
+    },
+    "image": "uploads/award-taect-fourth.jpg",
+    "imageAlt": {
+      "zh": "TAECT 數位媒體實作競賽第四名獎狀",
+      "en": "Certificate showing fourth place in the TAECT digital media competition"
+    },
+    "url": "https://taect.org.tw/2022-%E7%A0%94%E8%A8%8E%E6%9C%83%E6%9C%80%E4%BD%B3%E8%AB%96%E6%96%87%E8%88%87%E4%BD%9C%E5%93%81%E7%8D%8E/"
+    ,"project": "learning-game"
+  },
+  {
+    "title": {
+      "zh": "AI CUP 農地作物現況調查影像辨識競賽・春季賽",
+      "en": "AI CUP crop image-recognition competition · Spring"
+    },
+    "result": {
+      "zh": "隊伍成績前 25%",
+      "en": "Team ranked in the top 25%"
+    },
+    "date": "2022",
+    "description": {
+      "zh": "教育部全國大專校院人工智慧競賽，AI 作物影像判釋計畫。",
+      "en": "National AI competition for university students; crop image interpretation project."
+    },
+    "image": "uploads/award-aicup2022.png",
+    "imageAlt": {
+      "zh": "AI CUP 2022 農地作物影像辨識競賽證明",
+      "en": "AI CUP 2022 crop image-recognition competition certificate"
+    },
+    "url": "",
+    "project": "ai-cup-2022"
+  }
+]

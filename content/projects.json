@@ -1,0 +1,498 @@
+[
+  {
+    "id": "ai-math",
+    "title": {
+      "zh": "看見思考軌跡：AI 數學同伴",
+      "en": "Making Thinking Visible: AI Mathematics Companion"
+    },
+    "category": {
+      "zh": "碩士論文 · 網頁應用",
+      "en": "Master’s thesis · Web application"
+    },
+    "summary": {
+      "zh": "獨立完成結合互動畫布與多代理 AI 的數學問題解決系統，讓學生以手寫、繪圖和文字呈現解題歷程，並取得依解題階段調整的引導。",
+      "en": "Independently built a mathematics learning system combining an interactive canvas and cooperating AI agents. Students express their reasoning through handwriting, drawings, and text, receiving guidance adapted to their problem-solving stage."
+    },
+    "role": {
+      "zh": "獨立完成整套系統開發，涵蓋前端互動畫布、後端與資料紀錄、AI 代理協作、提示詞策略及功能整合。研究分析使用的問卷與量表，參考既有文獻及學長姊的研究工具。",
+      "en": "Independently developed the complete system, including the interactive canvas, backend and data records, AI-agent coordination, prompt strategies, and feature integration. Questionnaires and scales used for research analysis drew on published literature and instruments used by senior researchers."
+    },
+    "date": "2026",
+    "tags": [
+      "Web",
+      "Multimodal AI",
+      "Interactive canvas",
+      "Multi-agent"
+    ],
+    "featured": true,
+    "cover": "",
+    "coverAlt": {
+      "zh": "數學問題解決系統畫面",
+      "en": "Mathematics problem-solving interface"
+    },
+    "repo": "",
+    "demo": "",
+    "paper": "",
+    "blocks": [
+      {
+        "heading": {
+          "zh": "從文字對話到可見的思考歷程",
+          "en": "Making the reasoning process visible"
+        },
+        "body": {
+          "zh": "針對國小高年級的幾何文字應用題，將題目、互動畫布與 AI 對話整合在同一操作介面。學生可以自由書寫、繪製幾何圖形、列式、上傳圖片及標記重點，持續留下解題與修正的軌跡。",
+          "en": "The interface brings together geometric word problems, an interactive canvas, and AI conversation for upper-elementary students. Handwriting, geometric drawing, equations, image uploads, and annotations preserve students’ evolving reasoning and revisions."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "三層架構與代理人分工",
+          "en": "Three layers and agent responsibilities"
+        },
+        "body": {
+          "zh": "系統分為互動層、智慧層與資料層。互動層提供響應式網頁、畫布及對話；智慧層由「數學思考狀態分析師」推估解題階段，再由「數學 AI 小幫手」整合核心與階段提示詞生成引導；資料層儲存題庫、對話、畫布事件與學習歷程。",
+          "en": "The interaction layer provides a responsive interface, canvas, and conversation. In the intelligence layer, a mathematical-thinking analyst estimates the problem-solving stage, while an AI helper combines core and stage-specific prompts to generate guidance. The data layer stores tasks, dialogue, canvas events, and learning records."
+        },
+        "image": "uploads/math-companion-architecture.png",
+        "caption": {
+          "zh": "碩士論文中的系統架構圖：互動層、智慧層及資料層。",
+          "en": "System architecture from the thesis: interaction, intelligence, and data layers."
+        }
+      },
+      {
+        "heading": {
+          "zh": "一次互動的資料流程",
+          "en": "Data flow for one interaction"
+        },
+        "body": {
+          "zh": "學生送出訊息時，系統一併擷取畫布影像與近期互動紀錄，交由分析師推估當前解題階段。AI 小幫手依分析結果與題目脈絡生成提問或同理回應，回傳介面後更新對話與操作紀錄，供下一輪互動使用。設計目標是支持思考，而非直接提供答案。",
+          "en": "When a student sends a message, the system collects the canvas image and recent interaction history. The analyst estimates the current stage, and the helper uses that result and task context to generate questions or empathetic responses. Dialogue and activity records are then updated for the next interaction. The design supports reasoning rather than simply revealing answers."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "研究觀察與系統限制",
+          "en": "Pilot observations and limitations"
+        },
+        "body": {
+          "zh": "研究有效樣本為 9 名五年級學生，主要觀察到文字與畫布並行的人機互動。數學焦慮與自我效能的前後測差異均未達統計顯著，因此不宣稱已證實提升學習成效。後續改進重點包括解題階段判定的驗證、不規則筆跡理解，以及減少重複制式回應。",
+          "en": "The pilot included nine fifth graders and observed interactions combining text and canvas activity. Pre–post differences in mathematics anxiety and self-efficacy were not statistically significant, so the study does not establish improved learning outcomes. Further work includes validating stage estimates, understanding irregular handwriting, and reducing repetitive responses."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "learning-game",
+    "title": {
+      "zh": "夢健新生 · BioUtopia",
+      "en": "Dreaming about Health and Biology · BioUtopia"
+    },
+    "category": {
+      "zh": "大學專題 · TAECT 2022 第四名",
+      "en": "University project · TAECT 2022 fourth place"
+    },
+    "summary": {
+      "zh": "以類比學習為基礎，結合國中生物與健康教育內容的跨領域角色扮演遊戲。獲 TAECT 2022 數位媒體實作競賽第四名，並發表 TWELF 2023 研討會論文。",
+      "en": "An interdisciplinary role-playing game connecting junior-high biology and health education through analogy-based learning. It received fourth place in the TAECT 2022 digital media competition and led to a conference paper at TWELF 2023."
+    },
+    "role": {
+      "zh": "負責大量場景製作與 C# 程式撰寫，並準備題目及學習內容：整理國一生物課綱、閱讀數位教育研究，與組員共同完成 Unity 數位教育遊戲。",
+      "en": "Built many of the game scenes and wrote C# code. Prepared questions and learning content by reviewing the Grade 7 biology curriculum and digital education research, working with teammates on the Unity educational game."
+    },
+    "date": "2022–2023",
+    "tags": [
+      "Unity",
+      "C#",
+      "RPG",
+      "Education"
+    ],
+    "featured": true,
+    "cover": "",
+    "coverAlt": {
+      "zh": "數位教育遊戲畫面",
+      "en": "Digital educational game screenshot"
+    },
+    "repo": "",
+    "demo": "https://youtu.be/ViEtshRl5kY",
+    "paper": "https://drive.google.com/file/d/1n2QLw89tUAGv2QOhO-JWHLrrvWyK0rJz/view?usp=sharing",
+    "blocks": [
+      {
+        "heading": {
+          "zh": "以類比學習串起跨領域知識",
+          "en": "Connecting subjects through analogy"
+        },
+        "body": {
+          "zh": "專案把國中生物與健康教育內容融入角色扮演遊戲，透過類比情境與故事引導，協助學生理解課程概念。內容涵蓋生物的營養、運輸、協調與恆定，以及拒絕成癮等健康教育主題。",
+          "en": "The project brings junior-high biology and health education into a role-playing game. Analogous settings and a storyline help learners engage with concepts including nutrition, transport, coordination, homeostasis, and addiction prevention."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "競賽與論文成果",
+          "en": "Competition and publication"
+        },
+        "body": {
+          "zh": "TAECT 2022 數位媒體實作競賽第四名。\nTWELF 2023 研討會論文：以類比學習為基礎開發之國中生物與健康跨領域角色扮演遊戲。",
+          "en": "Fourth place in the TAECT 2022 digital media competition.\nPresented as a conference paper at TWELF 2023. The original paper title is listed in Publications."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "我的實作分工",
+          "en": "My implementation work"
+        },
+        "body": {
+          "zh": "在 Unity 中製作場景並撰寫遊戲程式，讓課程內容能在遊戲中呈現。同時準備學習題目與教材，將國一生物課綱及相關研究整理為遊戲內容。",
+          "en": "I built Unity scenes and wrote game code to present learning content through play. I also prepared questions and materials informed by the Grade 7 biology curriculum and related research."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "unity-sustainability",
+    "title": {
+      "zh": "前進元宇宙教育：探索沉浸式 VR 合作學習的全新可能",
+      "en": "Advancing metaverse education: Exploring new possibilities of immersive VR-based collaborative learning"
+    },
+    "category": {
+      "zh": "國科會計畫 · Unity／VRChat SDK 開發",
+      "en": "NSTC research project · Unity/VRChat SDK development"
+    },
+    "summary": {
+      "zh": "主導以 Unity 與 VRChat SDK 開發可在 Meta Quest 2 使用的沉浸式學習環境，讓國中生能進入虛擬世界互動，探索永續發展相關內容。",
+      "en": "Led the Unity and VRChat SDK development of an immersive learning environment for Meta Quest 2, enabling junior-high students to interact in a virtual world and explore sustainability-related content."
+    },
+    "role": {
+      "zh": "由我主導 Unity／VRChat SDK 學習環境開發，與一位協作者討論需求、分派協作事項並整合成果。我的參與集中在開發階段，未負責計畫前置研究與規劃、學生實驗導入、後續研究分析或期刊論文撰寫。",
+      "en": "Led the Unity/VRChat SDK learning-environment development, discussing requirements with one collaborator, assigning development tasks, and integrating the results. My involvement was limited to development; I did not handle the project’s prior research and planning, student-study implementation, subsequent analysis, or journal writing."
+    },
+    "date": "2023–2026",
+    "tags": [
+      "Unity",
+      "VRChat SDK",
+      "Meta Quest 2",
+      "STEM",
+      "SDGs"
+    ],
+    "featured": true,
+    "cover": "",
+    "coverAlt": {
+      "zh": "Unity 互動場景",
+      "en": "Unity interactive environment"
+    },
+    "repo": "",
+    "demo": "",
+    "paper": "",
+    "blocks": [
+      {
+        "heading": {
+          "zh": "Unity／VRChat SDK 學習環境",
+          "en": "A Unity/VRChat SDK learning environment"
+        },
+        "body": {
+          "zh": "以 Unity 串接 VRChat SDK，製作可在 Meta Quest 2 使用的沉浸式學習環境，讓國中生進入虛擬世界探索 SDGs 第 13 項「氣候行動」相關內容。",
+          "en": "Using Unity with the VRChat SDK, I built an immersive learning environment for Meta Quest 2. Junior-high students can enter a virtual world to explore content related to SDG 13, Climate Action."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "我主導的開發協作",
+          "en": "Development leadership and collaboration"
+        },
+        "body": {
+          "zh": "由我主導開發方向與工作拆分，與一位協作者討論實作方式、交派協作事項，再將各自完成的內容整合到學習環境中。這裡的主導是開發協作角色，不代表我負責整個研究計畫。",
+          "en": "I led the development direction and task breakdown, discussed implementation with one collaborator, assigned development work, and integrated the completed pieces into the learning environment. This describes development leadership, not ownership of the entire research project."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "開發與研究工作的界線",
+          "en": "Boundary between development and research work"
+        },
+        "body": {
+          "zh": "我的參與限於 Unity／VRChat SDK 學習環境開發，未包含計畫前置研究、學生研究導入、後續資料分析或期刊論文撰寫；因此相關教授期刊論文以 Acknowledgements 誌謝呈現，不列為作者。",
+          "en": "My contribution covered the Unity/VRChat SDK learning-environment development only. It did not include the project’s prior research, student-study implementation, later data analysis, or journal writing; the related professor’s journal paper therefore acknowledges the contribution rather than listing me as an author."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "vr-co-creation",
+    "title": {
+      "zh": "VR 內容共創學習活動",
+      "en": "Co-creating VR learning content"
+    },
+    "category": {
+      "zh": "國科會專題研究計畫",
+      "en": "NSTC research project"
+    },
+    "summary": {
+      "zh": "參與「後疫情時代支持學生進行 VR 內容共創學習活動之活動設計、腳本研發與成效評估」專題研究計畫。",
+      "en": "Participated in an NSTC project on activity design, script development, and effectiveness evaluation for students’ VR content co-creation learning in the post-COVID-19 era."
+    },
+    "role": {
+      "zh": "協助研究群學長姊製作 CoSpaces 數位教育遊戲，內容以國小高年級 STEAM 專題為主，並協助小學場域的 VR 合作學習實驗。",
+      "en": "Assisted senior research-group members in creating CoSpaces educational games for upper-elementary STEAM projects and supported a VR collaborative-learning experiment at an elementary school."
+    },
+    "date": "2022",
+    "tags": [
+      "CoSpaces",
+      "VR",
+      "STEAM",
+      "Collaborative learning"
+    ],
+    "featured": false,
+    "cover": "",
+    "coverAlt": {
+      "zh": "VR 共創學習活動畫面",
+      "en": "VR co-creation learning activity"
+    },
+    "repo": "",
+    "demo": "",
+    "paper": "",
+    "blocks": [
+      {
+        "heading": {
+          "zh": "計畫與參與工作",
+          "en": "Project and contribution"
+        },
+        "body": {
+          "zh": "參與陳政煥教授的學習與教學科技研究群（LIT Research Group），協助「後疫情時代支持學生進行 VR 內容共創學習活動之活動設計、腳本研發與成效評估」研究計畫。\n\n個人工作包括與學長姊共同製作 CoSpaces 教育遊戲，以及支援小學 VR 合作學習實驗。",
+          "en": "As a member of the LIT Research Group, I supported an NSTC project on activity design, collaboration scripts, and evaluation for VR content co-creation.\n\nMy contributions included creating CoSpaces educational games with senior members and supporting an elementary-school VR collaborative-learning experiment."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "XR 工具學習",
+          "en": "Learning XR tools"
+        },
+        "body": {
+          "zh": "在多媒體數位學習與行動學習課程中接觸 CoSpaces 與 MAKAR，製作 XR 數位教育遊戲，後續將 CoSpaces 經驗運用於研究群的合作學習素材。",
+          "en": "Used CoSpaces and MAKAR in multimedia and mobile learning courses to create XR educational games, later applying CoSpaces experience to collaborative-learning materials in the research group."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "ai-cup-2022",
+    "title": {
+      "zh": "AI CUP 2022 農作物影像辨識",
+      "en": "AI CUP 2022 crop image classification"
+    },
+    "category": {
+      "zh": "深度學習競賽 · Private Leaderboard 第 37／151 名",
+      "en": "Deep learning competition · 37th of 151 on the private leaderboard"
+    },
+    "summary": {
+      "zh": "使用 Python 與 PyTorch 參與 AI CUP 2022 農地作物現況調查影像辨識競賽春季賽，團隊 Private Leaderboard 得分 0.9838242，151 隊中排名第 37 名，位居前 25%。",
+      "en": "Used Python and PyTorch in the spring AI CUP 2022 crop image classification competition. The team scored 0.9838242 on the private leaderboard, ranking 37th of 151 teams in the top quarter."
+    },
+    "role": {
+      "zh": "主要負責理解與整合訓練程式，處理訓練集輸入、模型建立、模型評估及測試集結果輸出；資料集人工篩選由組員共同完成，其他組員也提供整理後的資料與訓練設備。",
+      "en": "Primarily understood and integrated the training workflow, handling training-data input, model construction, evaluation, and test-result output. Teammates jointly curated the dataset and provided prepared data and training hardware."
+    },
+    "date": "2022",
+    "tags": [
+      "Python",
+      "PyTorch",
+      "InceptionV3",
+      "EfficientNet",
+      "XGBoost",
+      "Transfer learning",
+      "Image classification"
+    ],
+    "featured": false,
+    "cover": "",
+    "coverAlt": {
+      "zh": "",
+      "en": ""
+    },
+    "repo": "",
+    "demo": "",
+    "paper": "",
+    "blocks": [
+      {
+        "heading": {
+          "zh": "從課程到競賽",
+          "en": "From coursework to competition"
+        },
+        "body": {
+          "zh": "先在人工智慧概論課程接觸 TensorFlow 與 Python，之後於深度學習課程學習 PyTorch，透過課程資源、錄影回放與週六競賽工作坊準備 AI CUP。",
+          "en": "I first studied TensorFlow and Python in an introductory AI course, then learned PyTorch in a deep learning course. Course resources, recorded lectures, and Saturday workshops supported competition preparation."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "資料規模與影像前處理",
+          "en": "Dataset scale and image preprocessing"
+        },
+        "body": {
+          "zh": "訓練集超過 80,000 張圖片、約 157 GB，不能直接完整投入訓練。團隊先把影像裁切為 512×512，保留具有明顯作物特徵的區域，再依作物位置與背景干擾人工篩選；第一版模型後，又針對表現較弱的胡蘿蔔、玉米、火龍果、花生、南瓜與黃豆整理第二版資料集。",
+          "en": "The training set contained more than 80,000 images and about 157 GB of data, so it could not be used directly. The team cropped images to 512×512 regions with visible crop features, then manually filtered background noise and created a second dataset for weaker classes such as carrot, corn, dragon fruit, peanut, pumpkin, and soybean."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "模型訓練與反覆修正",
+          "en": "Iterative model training"
+        },
+        "body": {
+          "zh": "在 Anaconda 的 Python／PyTorch 環境中，先以 InceptionV3 訓練，再以整理後的資料進行 InceptionV3 與 EfficientNet-B0 的遷移式訓練。測試影像也會切成 20 份進行評估，從可能預測錯誤的結果回頭整理資料，最後再訓練 EfficientNet-B2。",
+          "en": "In an Anaconda Python/PyTorch environment, the team first trained InceptionV3, then used the curated data for transfer learning with InceptionV3 and EfficientNet-B0. Test images were also split into 20 crops for evaluation; likely errors were reviewed and used to train a final EfficientNet-B2 model."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "模型輸出與集成結果",
+          "en": "Model outputs and ensemble"
+        },
+        "body": {
+          "zh": "我的程式工作涵蓋訓練集輸入、模型建立、測試集評估與結果輸出。團隊將 InceptionV3、EfficientNet-B0 與 EfficientNet-B2 的輸出 CSV 再交給 XGBoost 集成，產生最後的 submit_X2.csv；Private Leaderboard 得分為 0.9838242，151 隊中排名第 37 名。",
+          "en": "My code work covered training input, model construction, test evaluation, and result output. The team fed the CSV outputs from InceptionV3, EfficientNet-B0, and EfficientNet-B2 into XGBoost to create submit_X2.csv. The private leaderboard score was 0.9838242, ranking 37th of 151 teams."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "錯誤分析與限制",
+          "en": "Error analysis and limitations"
+        },
+        "body": {
+          "zh": "檢查結果時發現南瓜是較弱的類別，雜草背景可能與南瓜葉相似，影響 F1-score。團隊也曾訓練其他模型，但完成時已超過上傳期限，因此無法確認是否改善最終成績。",
+          "en": "Pumpkin was a weaker class during error review, partly because weed backgrounds could resemble pumpkin leaves and reduce the F1 score. The team also trained additional models, but they finished after the submission deadline, so their effect on the final result could not be confirmed."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "web-blog",
+    "title": {
+      "zh": "個人網站與部落格建置",
+      "en": "Personal website and blog"
+    },
+    "category": {
+      "zh": "自主學習 · 網頁建置",
+      "en": "Independent learning · Web development"
+    },
+    "summary": {
+      "zh": "從高中使用 Blogger 記錄生活，到大學使用 WordPress 建立個人網站，持續學習網頁呈現、內容管理與資料庫基礎。",
+      "en": "From blogging with Blogger in high school to building a WordPress site at university, I developed experience with web presentation, content management, and database fundamentals."
+    },
+    "role": {
+      "zh": "自行探索免費架站資源、建立與調整個人部落格；學習 PHP、MySQL、HTML5 與 CSS，整理科技及單車旅行內容。",
+      "en": "Explored free hosting resources and set up and customized my personal blog. Studied PHP, MySQL, HTML5, and CSS, and organized technology and cycling content."
+    },
+    "date": "",
+    "tags": [
+      "WordPress",
+      "PHP",
+      "MySQL",
+      "HTML / CSS"
+    ],
+    "featured": false,
+    "cover": "",
+    "coverAlt": {
+      "zh": "",
+      "en": ""
+    },
+    "repo": "",
+    "demo": "https://zhuyin.epizy.com/",
+    "paper": "",
+    "blocks": [
+      {
+        "heading": {
+          "zh": "持續經營的個人入口",
+          "en": "A continuing personal presence"
+        },
+        "body": {
+          "zh": "高二開始使用 Blogger，大二進一步接觸 WordPress，使用網路上的免費資源建置 zhuyin.epizy.com。網頁學習包含 PHP、MySQL、HTML5 與 CSS。",
+          "en": "I started using Blogger in high school and moved into WordPress at university, building zhuyin.epizy.com with freely available resources. My web studies included PHP, MySQL, HTML5, and CSS."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ]
+  }
+]
