@@ -193,8 +193,8 @@
       "en": "Led the Unity and VRChat SDK development of an immersive learning environment for Meta Quest 2, enabling junior-high students to interact in a virtual world and explore sustainability-related content."
     },
     "role": {
-      "zh": "由我主導 Unity／VRChat SDK 學習環境開發，與一位協作者討論需求、分派協作事項並整合成果。我的參與集中在開發階段，未負責計畫前置研究與規劃、學生實驗導入、後續研究分析或期刊論文撰寫。",
-      "en": "Led the Unity/VRChat SDK learning-environment development, discussing requirements with one collaborator, assigning development tasks, and integrating the results. My involvement was limited to development; I did not handle the project’s prior research and planning, student-study implementation, subsequent analysis, or journal writing."
+      "zh": "我主導 Unity／VRChat SDK 學習環境開發，與一位協作者討論需求、分派協作事項並整合成果。",
+      "en": "I led the Unity/VRChat SDK learning-environment development, discussing requirements with one collaborator, assigning development tasks, and integrating the results."
     },
     "date": "2023–2026",
     "tags": [
@@ -235,23 +235,8 @@
           "en": "Development leadership and collaboration"
         },
         "body": {
-          "zh": "由我主導開發方向與工作拆分，與一位協作者討論實作方式、交派協作事項，再將各自完成的內容整合到學習環境中。這裡的主導是開發協作角色，不代表我負責整個研究計畫。",
-          "en": "I led the development direction and task breakdown, discussed implementation with one collaborator, assigned development work, and integrated the completed pieces into the learning environment. This describes development leadership, not ownership of the entire research project."
-        },
-        "image": "",
-        "caption": {
-          "zh": "",
-          "en": ""
-        }
-      },
-      {
-        "heading": {
-          "zh": "開發與研究工作的界線",
-          "en": "Boundary between development and research work"
-        },
-        "body": {
-          "zh": "我的參與限於 Unity／VRChat SDK 學習環境開發，未包含計畫前置研究、學生研究導入、後續資料分析或期刊論文撰寫；因此相關教授期刊論文以 Acknowledgements 誌謝呈現，不列為作者。",
-          "en": "My contribution covered the Unity/VRChat SDK learning-environment development only. It did not include the project’s prior research, student-study implementation, later data analysis, or journal writing; the related professor’s journal paper therefore acknowledges the contribution rather than listing me as an author."
+          "zh": "由我主導開發方向與工作拆分，與一位協作者討論實作方式、交派協作事項，再將各自完成的內容整合到學習環境中。相關教授的期刊論文以 Acknowledgements 誌謝這項開發協作。",
+          "en": "I led the development direction and task breakdown, discussed implementation with one collaborator, assigned development work, and integrated the completed pieces into the learning environment. The related professor’s journal paper acknowledges this development contribution."
         },
         "image": "",
         "caption": {

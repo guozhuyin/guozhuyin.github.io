@@ -42,15 +42,15 @@ test('Education keeps the broader study scope and groups K-12 as optional detail
  try{
   const data=await loadContent();assert.deepEqual(validate(data),[]);await build({outDir:out,data});
   const zh=await readFile(path.join(out,'zh/about/index.html'),'utf8');
-  assert.ok(zh.includes('課程與專案涵蓋網頁建置、程式設計、資料庫、人工智慧、Unity／XR、多媒體與數位學習'));
-  assert.ok(zh.includes('CRM、ERP、MIS 等資訊系統的基本用途與差異'));
+  assert.ok(zh.includes('修習網頁建置、程式設計、資料庫、人工智慧、Unity／XR、多媒體與數位學習等課程'));
+  assert.ok(zh.includes('CRM、ERP、MIS 的定位與基本用途'));
   for(const schoolUrl of ['https://www.lst.ncu.edu.tw/NLT_new/index.php','https://mcma.asia.edu.tw/','https://csie.asia.edu.tw/'])assert.ok(zh.includes(schoolUrl));
-  assert.ok(zh.includes('class="education-title-link"'));assert.ok(!zh.includes('education-links'));assert.ok(zh.includes('class="publication-title-link"'));assert.ok(!zh.includes('閱讀論文'));
+  assert.ok(zh.includes('class="education-title-link"'));assert.ok(!zh.includes('education-links'));assert.ok(zh.includes('class="publication-title-link"'));assert.ok(!zh.includes('閱讀論文'));assert.ok(!zh.includes('保留完整教育背景'));assert.ok(!zh.includes('一般內容可切換語言'));assert.ok(!zh.includes('論文題名與作者依原文列示'));
   assert.ok(zh.includes('<details class="early-education-disclosure">'));
   assert.ok(zh.includes('大學以前（K–12）'));for(const school of ['湖口高中','民雄國中','民雄國小'])assert.ok(zh.includes(`<li>${school}</li>`));
   const proofData=structuredClone(data);proofData.education[0].proofTitle={zh:'碩士學位證書',en:'Master diploma'};proofData.education[0].proofImageZh='uploads/master-diploma.png';proofData.education[0].proofImageAlt={zh:'碩士學位證書',en:'Master diploma'};await build({outDir:out,data:proofData});const proofZh=await readFile(path.join(out,'zh/about/index.html'),'utf8');assert.ok(proofZh.includes('碩士學位證書'));assert.ok(proofZh.includes('uploads/master-diploma.png'));assert.ok(proofZh.includes('education-proof'));assert.ok(!proofZh.includes('<details class="proof-disclosure education-proof" open'));
   assert.ok(zh.indexOf('id="project-evidence"')<zh.indexOf('>學歷<'));
-  const en=await readFile(path.join(out,'en/about/index.html'),'utf8');assert.ok(en.includes('Before university (K–12)'));assert.ok(en.includes('Coursework and projects covered web development'));
+  const en=await readFile(path.join(out,'en/about/index.html'),'utf8');assert.ok(en.includes('Before university (K–12)'));assert.ok(en.includes('coursework in web development, programming, databases, artificial intelligence, Unity/XR, multimedia, and digital learning'));
  }finally{await rm(out,{recursive:true,force:true});}
 });
 
@@ -73,8 +73,8 @@ test('NSTC VR project records development leadership without overstating researc
  try{
   const data=await loadContent();await build({outDir:out,data});
   const zh=await readFile(path.join(out,'zh/projects/unity-sustainability/index.html'),'utf8');
-  assert.ok(zh.includes('由我主導 Unity／VRChat SDK 學習環境開發'));
-  assert.ok(zh.includes('一位協作者'));assert.ok(zh.includes('Meta Quest 2'));assert.ok(zh.includes('Acknowledgements'));
+  assert.ok(zh.includes('我主導 Unity／VRChat SDK 學習環境開發'));
+  assert.ok(zh.includes('一位協作者'));assert.ok(zh.includes('Meta Quest 2'));assert.ok(zh.includes('Acknowledgements'));assert.ok(!zh.includes('不代表'));
   assert.ok(!zh.includes('Unity 開發參與者；負責模組待補充'));
  }finally{await rm(out,{recursive:true,force:true});}
 });

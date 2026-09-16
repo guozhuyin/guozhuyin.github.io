@@ -2,7 +2,6 @@ export const interfaceFields = {
   projectEvidence: {label:"專案與實作標題",type:"localized"},
   expandPublications: {label:"展開論文列表",type:"localized"},
   earlyEducation: {label:"早期教育標題",type:"localized"},
-  earlyEducationNote: {label:"早期教育說明",type:"localized"},
   "brand": {
     "label": "brand — 個人網站",
     "type": "localized",
@@ -193,11 +192,6 @@ export const interfaceFields = {
     "type": "localized",
     "long": false
   },
-  "translation": {
-    "label": "translation — 一般內容可切換語言；論文、作者與證書保留原文。",
-    "type": "localized",
-    "long": false
-  },
   "footer": {
     "label": "footer — 持續學習，也持續記錄。",
     "type": "localized",
@@ -315,11 +309,6 @@ export const interfaceFields = {
   },
   "certEn": {
     "label": "certEn — 英文版證書",
-    "type": "localized",
-    "long": false
-  },
-  "publicationNote": {
-    "label": "publicationNote — 論文題名與作者依原文列示。",
     "type": "localized",
     "long": false
   },
