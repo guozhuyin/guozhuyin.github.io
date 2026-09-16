@@ -5,3 +5,14 @@ node_modules/
 .build-*/
 content/*.tmp
 work/
+
+# Private source material and local history backups
+*.doc
+*.docx
+*.odt
+*.rtf
+*.bundle
+*.bak
+.private-backups/
+private/
+internal/
