@@ -103,10 +103,6 @@
     "zh": "早期教育（K–12）",
     "en": "Early education (K–12)"
   },
-  "earlyEducationNote": {
-    "zh": "保留完整教育背景；求職閱讀時可按需要展開。",
-    "en": "Included for completeness; expand when you want the full education history."
-  },
   "certificates": {
     "zh": "證照",
     "en": "Certificates"
@@ -158,10 +154,6 @@
   "pending": {
     "zh": "資料待補充",
     "en": "Details to be added"
-  },
-  "translation": {
-    "zh": "一般內容可切換語言；論文、作者與證書保留原文。",
-    "en": "Switch languages for general content. Publications, authors, and certificates retain their original wording."
   },
   "footer": {
     "zh": "持續學習，也持續記錄。",
@@ -258,10 +250,6 @@
   "certEn": {
     "zh": "英文版證書",
     "en": "English certificate"
-  },
-  "publicationNote": {
-    "zh": "論文題名與作者依原文列示。",
-    "en": "Paper titles and authors are shown in their original language."
   },
   "mainNav": {
     "zh": "主要導覽",
