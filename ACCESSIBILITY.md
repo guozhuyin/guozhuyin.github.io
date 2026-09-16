@@ -18,7 +18,7 @@
 
 使用者於本次確認單個作品頁會觸發 Edge 原生閱讀模式，依要求移除站內「專注閱讀」按鈕、程式與樣式。保留原本的靜態文章內容，首頁作為作品入口，不強制模擬瀏覽器閱讀器。
 
-本次 Mozilla Readability 的補充檢查能擷取測試頁文字；更新後中英文 AI 數學作品與關於我皆通過其「可能適合閱讀」預判，但此工具不代表 Edge 的內部演算法。Edge 的結果依使用者實測回報，未在此環境重做實際 Edge 介面測試。
+本次 Mozilla Readability 的補充檢查能擷取測試頁文字；更新後中英文 AI 數學作品與關於我皆通過其「可能適合閱讀」預判。這項工具不能模擬 Edge 的內部演算法；Edge 的結果依使用者實測回報，未在此環境重做實際 Edge 介面測試。
 
 Microsoft 官方說明：https://support.microsoft.com/en-US/edge/use-immersive-reader-in-microsoft-edge
 
