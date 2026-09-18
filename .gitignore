@@ -7,6 +7,7 @@ content/*.tmp
 work/
 
 # Private source material and local history backups
+.private/
 *.doc
 *.docx
 *.odt
