@@ -4,8 +4,8 @@
     "en": "Zhuyin"
   },
   "intro": {
-    "zh": "用程式拆解問題，\n做出可使用的解決方案。",
-    "en": "Break down problems with code.\nBuild usable solutions."
+    "zh": "從網頁、AI 到互動系統，\n持續累積實作成果。",
+    "en": "From web development and AI to interactive systems,\nI keep building practical experience."
   },
   "summary": {
     "zh": "我是注音，碩士畢業，目前尋找軟體開發、資訊系統與 MIS 相關工作。從 AI 數學解題、數位教育遊戲到 Unity 互動情境，我關注如何把技術用在真實的學習與使用需求中。",
@@ -48,8 +48,8 @@
     "TensorFlow"
   ],
   "interests": {
-    "zh": "平時會閱讀科技資訊，關注手機、穿戴裝置與電腦硬體等產品發展；休閒喜歡旅遊、象棋、黑白棋、單車、羽球與保齡球。高中畢業後曾以單車環島，並在部落格記錄沿途故事；參加研討會時也會安排認識當地，持續探索不同地方。也曾陪伴學生以單車完成花蓮到臺東的路程，參與兒童營隊與教會陪讀。",
-    "en": "I follow technology news, especially new phones, wearables, and computer hardware. Outside work, I enjoy travelling, chess, Reversi, cycling, badminton, and bowling. After high school, I cycled around Taiwan and documented the journey on my blog; when attending conferences, I also make time to explore the host city and other places. I have also accompanied students cycling from Hualien to Taitung and taken part in children’s camps and church reading activities."
+    "zh": "平時會閱讀科技資訊，關注手機、穿戴裝置與電腦硬體等產品發展；休閒喜歡旅遊、象棋、黑白棋、單車、羽球與保齡球。高中畢業後曾以單車環島，並在部落格記錄沿途故事；參加研討會時也會安排認識當地，持續探索不同地方。也曾參與不同內容的兒童營隊與教會陪讀；在營隊中依活動內容協助學生完成任務、玩大地遊戲、蓋樹屋，陪伴他們以單車完成花蓮到臺東的路程，並協助 Minecraft 程式設計與 Python、APCS 考試輔導。",
+    "en": "I follow technology news, especially new phones, wearables, and computer hardware. Outside work, I enjoy travelling, chess, Reversi, cycling, badminton, and bowling. After high school, I cycled around Taiwan and documented the journey on my blog; when attending conferences, I also make time to explore the host city and other places. I have also taken part in children’s camps with different themes and church reading activities. Depending on the camp, I helped students complete tasks, play outdoor games, build treehouses, cycle from Hualien to Taitung, and learn Minecraft programming or prepare for Python and APCS exams."
   },
   "tools": [
     "GitHub",
