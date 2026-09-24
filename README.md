@@ -18,13 +18,13 @@ GitHub Pages 工作流程會建置網站並發布 `dist/`。這個 repository �
 
 ## 內容來源與資料規則
 
-WordPress 部落格是文章全文與最新內容的來源；GitHub Pages 只維護少量精選文章入口，因此文章標題、摘要、日期與網址需在 `content/articles.json` 保持一致。正式的論文題名、作者姓名與證照名稱依原文列示；一般說明才依各語言資料維護。證書與競賽證明圖片預設收合，展開後才查看原圖。
+WordPress 部落格是文章全文與後續更新的來源；`content/articles.json` 保存已整理的文章清單。`featured` 只決定首頁與文章頁顯示的精選篇目，取消精選不會刪除文章。網站不會自動同步 WordPress，文章入口需手動維護。正式的論文題名、作者姓名與證照名稱依原文列示；一般說明才依各語言資料維護。證書與競賽證明圖片預設收合，展開後才查看原圖。
 
 網站目前提供中文、英文及可擴充的語言資料。中文證書優先使用中文圖片，其他語言優先使用英文圖片，沒有英文時回退到中文；這項圖片選擇與網站語言數量分開處理。
 
 ## 發布與公開資料邊界
 
-GitHub Actions 會在 `main` 更新時執行 `npm run check`，成功後發布 `dist/`。本機編輯器、來源資料和本機 API 不會部署。
+GitHub Actions 會在 `main` 更新時執行 `npm run check`，成功後發布 `dist/`；`dist/` 也保留在 Git 中，供 GitHub Pages 使用。Repository 本身公開，本機內容編輯器的儲存 API 只在本機運作。
 
 只把確認適合公開的內容放入 `content/`、`public/` 或 `dist/`。不要提交身分證件號碼、電話、私人文件或本機檔案路徑；`.private/` 與 `.private-backups/` 是本機資料夾，會被 Git 忽略。
 

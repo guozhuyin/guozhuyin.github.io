@@ -12,12 +12,16 @@
     "en": "I’m Zhuyin, a master’s graduate seeking opportunities in software development, information systems, and MIS. My projects span AI-assisted mathematics problem solving, digital educational games, and interactive Unity environments, with a focus on practical learning and user needs."
   },
   "about": {
-    "zh": "你可以叫我注音。我已完成國立中央大學網路學習科技研究所碩士學業，目前尋找軟體開發、資訊系統與 MIS 相關工作。大學就讀亞洲大學行動商務與多媒體應用學系，雙主修資訊工程學系，也曾選修心理學課程。\n\n我喜歡把問題做成可以操作的工具：以 Unity 與 C# 開發數位教育遊戲、以 Python 與 PyTorch 參與農作物影像辨識競賽，也透過 PHP、MySQL、HTML 與 CSS 學習網頁建置。碩士論文專案則讓學生以圖畫和文字與 AI 互動，進行數學問題解決。\n\n從高中經營部落格到兒童程式營隊，我持續透過實作、教學與記錄整理自己的學習。自主學習、願意嘗試，以及從使用者角度思考，是我在不同專案中累積的工作方式。",
-    "en": "I go by Zhuyin. I have completed my master’s studies at National Central University’s Graduate Institute of Network Learning Technology and am seeking software development, information systems, and MIS roles. At Asia University, I majored in M-Commerce and Multimedia Application with a second major in Computer Science and Information Engineering, and also took psychology courses.\n\nI enjoy turning problems into working tools: educational games with Unity and C#, crop image classification with Python and PyTorch, and web development using PHP, MySQL, HTML, and CSS. My master’s thesis project lets students interact with AI through drawings and text to solve mathematics problems.\n\nFrom blogging in high school to assisting at children’s programming camps, I learn through building, teaching, and documenting. Independent learning, willingness to try, and attention to users shape how I approach projects."
+    "zh": "你可以叫我注音。我已完成國立中央大學網路學習科技研究所碩士學業，目前尋找軟體開發、資訊系統與 MIS 相關工作。大學就讀亞洲大學行動商務與多媒體應用學系，雙主修資訊工程學系，也曾選修心理學課程。\n\n以 Unity 與 C# 開發數位教育遊戲、以 Python 與 PyTorch 參與農作物影像辨識競賽，也透過 PHP、MySQL、HTML 與 CSS 學習網頁建置。碩士論文的系統由我獨立開發，讓學生以圖畫和文字與 AI 互動，進行數學問題解決。\n\n國小有了自己的電腦後，我開始好奇網路與軟體如何運作。國中時，因一台使用體驗不佳的 Android 平板而查找刷機方法，動手嘗試 Recovery，並接觸 Linux 與命令列。遇到問題時查找資料、反覆嘗試的過程，讓我逐漸願意自己動手解決。高中接觸 C、Java、Python、SQL 與 PHP，也開始經營部落格；大學期間再用 WordPress 建立自己的網站。",
+    "en": "I go by Zhuyin. I have completed my master’s studies at National Central University’s Graduate Institute of Network Learning Technology and am seeking software development, information systems, and MIS roles. At Asia University, I majored in M-Commerce and Multimedia Application with a second major in Computer Science and Information Engineering, and also took psychology courses.\n\nI developed an educational game with Unity and C#, took part in a crop image classification competition using Python and PyTorch, and studied web development with PHP, MySQL, HTML, and CSS. I developed the system for my master’s thesis independently: students use drawings and text to interact with AI while solving mathematics problems.\n\nHaving my own computer in elementary school made me curious about how software and the internet work. In junior high, a slow Android tablet led me to look up ways to flash its firmware. Trying Recovery introduced me to Linux and the command line. Searching for answers and trying again when things did not work gave me the confidence to solve problems myself. In high school, I explored C, Java, Python, SQL, and PHP and started a blog. During university, I built my own website with WordPress."
   },
   "focus": {
     "zh": "碩士畢業 · 軟體／資訊系統／MIS 求職中",
     "en": "Master’s graduate · Open to software, IT & MIS roles"
+  },
+  "residence": {
+    "zh": "新竹，臺灣（中華民國）",
+    "en": "Hsinchu, Taiwan (R.O.C.)"
   },
   "photo": "uploads/zhuyin-profile.jpg",
   "photoAlt": {
@@ -48,8 +52,8 @@
     "TensorFlow"
   ],
   "interests": {
-    "zh": "平時會閱讀科技資訊，關注手機、穿戴裝置與電腦硬體等產品發展；休閒喜歡旅遊、象棋、黑白棋、單車、羽球與保齡球。高中畢業後曾以單車環島，並在部落格記錄沿途故事；參加研討會時也會安排認識當地，持續探索不同地方。也曾參與不同內容的兒童營隊與教會陪讀；在營隊中依活動內容協助學生完成任務、玩大地遊戲、蓋樹屋，陪伴他們以單車完成花蓮到臺東的路程，並協助 Minecraft 程式設計與 Python、APCS 考試輔導。",
-    "en": "I follow technology news, especially new phones, wearables, and computer hardware. Outside work, I enjoy travelling, chess, Reversi, cycling, badminton, and bowling. After high school, I cycled around Taiwan and documented the journey on my blog; when attending conferences, I also make time to explore the host city and other places. I have also taken part in children’s camps with different themes and church reading activities. Depending on the camp, I helped students complete tasks, play outdoor games, build treehouses, cycle from Hualien to Taitung, and learn Minecraft programming or prepare for Python and APCS exams."
+    "zh": "平時會閱讀科技資訊，關注手機、穿戴裝置與電腦硬體等產品發展；休閒喜歡旅遊、象棋、黑白棋、單車、羽球與保齡球。高中畢業後，我完成期待已久的單車環島，並把沿途故事記在部落格；參加研討會時，也喜歡安排時間認識當地。在不同的兒童營隊，我曾與孩子一起生火煮飯、玩大地遊戲、蓋樹屋，陪伴他們以單車完成花蓮到臺東的路程，也協助 Minecraft 程式設計與 Python、APCS 考試輔導。這些經驗讓我發現自己喜歡與孩子相處；此外，我也曾在教會擔任兒童陪讀志工。",
+    "en": "I follow technology news, especially new phones, wearables, and computer hardware. Outside work, I enjoy travelling, chess, Reversi, cycling, badminton, and bowling. After graduating from high school, I fulfilled a long-held wish to cycle around Taiwan and recorded the journey on my blog. When attending conferences, I also like to explore the local area. Across different children’s camps, I have made fires and cooked with children, played outdoor games, built treehouses, accompanied them on a cycling trip from Hualien to Taitung, and helped with Minecraft programming and Python and APCS exam preparation. Those experiences helped me discover that I enjoy spending time with children. I have also volunteered in a church reading program for children."
   },
   "tools": [
     "GitHub",
