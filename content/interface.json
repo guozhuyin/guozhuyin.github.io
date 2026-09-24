@@ -7,21 +7,9 @@
     "zh": "跳到主要內容",
     "en": "Skip to content"
   },
-  "theme": {
-    "zh": "外觀",
-    "en": "Appearance"
-  },
   "system": {
     "zh": "跟隨系統",
     "en": "System"
-  },
-  "light": {
-    "zh": "明亮",
-    "en": "Light"
-  },
-  "dark": {
-    "zh": "暗黑",
-    "en": "Dark"
   },
   "work": {
     "zh": "精選作品",
@@ -36,8 +24,12 @@
     "en": "All projects"
   },
   "about": {
-    "zh": "關於我",
+    "zh": "關於",
     "en": "About"
+  },
+  "residence": {
+    "zh": "居住地",
+    "en": "Residence"
   },
   "read": {
     "zh": "閱讀專案",
@@ -52,8 +44,8 @@
     "en": "Things worth keeping from technology, projects, and everyday life."
   },
   "writingSourceNote": {
-    "zh": "完整與最新文章仍在 WordPress；這裡只整理少量精選入口。",
-    "en": "The complete and latest posts remain on WordPress; this page keeps only a small curated set."
+    "zh": "文章全文原刊於 WordPress；這裡只整理少量精選入口。",
+    "en": "Full articles were originally published on WordPress; this page keeps only a small curated set."
   },
   "openBlog": {
     "zh": "前往部落格",
@@ -119,10 +111,6 @@
     "zh": "保持聯繫",
     "en": "Get in touch"
   },
-  "contactText": {
-    "zh": "歡迎透過以下方式認識我。",
-    "en": "Find me through the links below."
-  },
   "noContact": {
     "zh": "聯絡方式待補充",
     "en": "Contact details to be added"
@@ -135,17 +123,9 @@
     "zh": "這裡將整理技術實作、科技觀察與單車生活的精選文章。",
     "en": "Selected posts on technical projects, technology observations, and life on a bicycle will appear here."
   },
-  "readArticle": {
-    "zh": "閱讀原文",
-    "en": "Read the article"
-  },
   "resume": {
     "zh": "履歷",
     "en": "Résumé"
-  },
-  "print": {
-    "zh": "列印／另存 PDF",
-    "en": "Print / save PDF"
   },
   "toTop": {
     "zh": "回到頂端",
@@ -162,10 +142,6 @@
   "projectsIntro": {
     "zh": "透過網頁、遊戲與虛擬情境，探索技術的實際應用。",
     "en": "Exploring practical applications of technology through web tools, games, and virtual environments."
-  },
-  "enOnly": {
-    "zh": "英文版證書",
-    "en": "English certificate"
   },
   "fallback": {
     "zh": "此段暫以原文呈現。",
@@ -212,7 +188,7 @@
     "en": "Projects"
   },
   "navAbout": {
-    "zh": "關於我",
+    "zh": "關於",
     "en": "About"
   },
   "navWriting": {
@@ -238,10 +214,6 @@
   "languageFallback": {
     "zh": "部分內容尚未提供此語言版本，以下保留已提供的原文。",
     "en": "Some content is not yet available in this language. The supplied original is shown below."
-  },
-  "original": {
-    "zh": "原文",
-    "en": "Original"
   },
   "certZh": {
     "zh": "中文版證書",

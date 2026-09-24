@@ -12,23 +12,8 @@ export const interfaceFields = {
     "type": "localized",
     "long": false
   },
-  "theme": {
-    "label": "theme — 外觀",
-    "type": "localized",
-    "long": false
-  },
   "system": {
     "label": "system — 跟隨系統",
-    "type": "localized",
-    "long": false
-  },
-  "light": {
-    "label": "light — 明亮",
-    "type": "localized",
-    "long": false
-  },
-  "dark": {
-    "label": "dark — 暗黑",
     "type": "localized",
     "long": false
   },
@@ -47,8 +32,13 @@ export const interfaceFields = {
     "type": "localized",
     "long": false
   },
+  "residence": {
+    "label": "residence — 居住地",
+    "type": "localized",
+    "long": false
+  },
   "about": {
-    "label": "about — 關於我",
+    "label": "about — 關於",
     "type": "localized",
     "long": false
   },
@@ -68,7 +58,7 @@ export const interfaceFields = {
     "long": false
   },
   "writingSourceNote": {
-    "label": "writingSourceNote — 完整與最新文章仍在 WordPress；這裡只整理精選入口。",
+    "label": "writingSourceNote — 文章全文原刊於 WordPress；這裡只整理精選入口。",
     "type": "localized",
     "long": false
   },
@@ -147,11 +137,6 @@ export const interfaceFields = {
     "type": "localized",
     "long": false
   },
-  "contactText": {
-    "label": "contactText — 歡迎透過以下方式認識我。",
-    "type": "localized",
-    "long": false
-  },
   "noContact": {
     "label": "noContact — 聯絡方式待補充",
     "type": "localized",
@@ -167,18 +152,8 @@ export const interfaceFields = {
     "type": "localized",
     "long": false
   },
-  "readArticle": {
-    "label": "readArticle — 閱讀原文",
-    "type": "localized",
-    "long": false
-  },
   "resume": {
     "label": "resume — 履歷",
-    "type": "localized",
-    "long": false
-  },
-  "print": {
-    "label": "print — 列印／另存 PDF",
     "type": "localized",
     "long": false
   },
@@ -199,11 +174,6 @@ export const interfaceFields = {
   },
   "projectsIntro": {
     "label": "projectsIntro — 透過網頁、遊戲與虛擬情境，探索技術的實際應用。",
-    "type": "localized",
-    "long": false
-  },
-  "enOnly": {
-    "label": "enOnly — 英文版證書",
     "type": "localized",
     "long": false
   },
@@ -263,7 +233,7 @@ export const interfaceFields = {
     "long": false
   },
   "navAbout": {
-    "label": "navAbout — 關於我",
+    "label": "navAbout — 關於",
     "type": "localized",
     "long": false
   },
@@ -294,11 +264,6 @@ export const interfaceFields = {
   },
   "languageFallback": {
     "label": "languageFallback — 部分內容尚未提供此語言版本，以下保留已提供的原文。",
-    "type": "localized",
-    "long": false
-  },
-  "original": {
-    "label": "original — 原文",
     "type": "localized",
     "long": false
   },
