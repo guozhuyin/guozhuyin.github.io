@@ -43,6 +43,10 @@
     "zh": "記錄開發、科技與生活裡值得留下的事。",
     "en": "Things worth keeping from technology, projects, and everyday life."
   },
+  "writingSummary": {
+    "zh": "從 Android 刷機、系統設定到單車旅程，在部落格整理實作步驟與生活經驗，留下曾遇到的問題、嘗試的方法，以及沿途的故事與想法。",
+    "en": "From Android firmware flashing and system settings to cycling journeys, my blog records practical steps and everyday experiences—the problems I encountered, the approaches I tried, and stories and thoughts from the road."
+  },
   "writingSourceNote": {
     "zh": "文章全文原刊於 WordPress；這裡只整理少量精選入口。",
     "en": "Full articles were originally published on WordPress; this page keeps only a small curated set."
@@ -228,12 +232,12 @@
     "en": "Main navigation"
   },
   "aboutHeading": {
-    "zh": "好奇心是起點，\n實際做過的事是累積。",
-    "en": "Curiosity starts it.\nPractice makes it real."
+    "zh": "接觸技術的起點，\n與作品之外的生活。",
+    "en": "How it started,\nand life beyond the projects."
   },
   "aboutIntro": {
-    "zh": "從網頁與互動遊戲，到兒童營隊和單車旅程。持續學習，也把不同場域的經驗帶回開發與思考之中。",
-    "en": "From web applications and interactive games to children’s camps and cycling trips. Learning across settings, and bringing those experiences back into what I build."
+    "zh": "因為一台不好用的 Android 平板開始查找刷機方法，接觸 Linux 與命令列，也陸續經營部落格；研究與開發之外，喜歡單車旅遊，並曾參與兒童營隊與陪讀志工。",
+    "en": "A slow Android tablet led to firmware flashing, Linux, and the command line, followed by blogging. Beyond research and development, cycling, children’s camps, and reading volunteer work are also part of my life."
   },
   "lifeHeading": {
     "zh": "把好奇心帶上路，\n在不同地方學習。",
@@ -250,5 +254,9 @@
   "expandPublications": {
     "zh": "展開完整論文列表",
     "en": "View all publications"
+  },
+  "emailMe": {
+    "zh": "聯絡我",
+    "en": "Email me"
   }
 }

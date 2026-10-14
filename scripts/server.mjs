@@ -14,7 +14,7 @@ function uploadType(buffer){
  if(buffer.subarray(0,4).toString()==='RIFF'&&buffer.subarray(8,12).toString()==='WEBP')return 'webp';
  return null;
 }
-export async function startServer({port=4173}={}){
+export async function startServer({port=4173,editor=true}={}){
  await build();const token=randomBytes(32).toString('hex');let saving=false;
  const server=http.createServer(async(req,res)=>{
   const json=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
@@ -24,6 +24,9 @@ export async function startServer({port=4173}={}){
   if(req.headers.host!==`127.0.0.1:${activePort}`){json(403,{error:'請使用終端機顯示的 127.0.0.1 網址。'});return;}
   if(req.headers['sec-fetch-site']==='cross-site'){json(403,{error:'禁止跨站請求'});return;}
   let pathname;try{pathname=decodeURIComponent(new URL(req.url,origin).pathname);}catch{json(400,{error:'無效網址'});return;}
+  if(!editor&&(pathname==='/editor'||pathname.startsWith('/editor/')||pathname.startsWith('/api/'))){
+   res.writeHead(404,{'Content-Type':mime['.html']});res.end(req.method==='HEAD'?'':await readFile(path.join(ROOT,'dist/404.html')));return;
+  }
   if(pathname.startsWith('/api/')){
    if(req.headers['x-editor-token']!==token||req.method==='POST'&&req.headers.origin!==origin){json(403,{error:'編輯連線已失效，請重新開啟本機編輯器。'});return;}
    try{
@@ -84,9 +87,10 @@ export async function startServer({port=4173}={}){
  return server;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
- startServer({port:Number(process.env.MYPAGE_PORT||4173)}).then(server=>{
+ const editor=!process.argv.includes('--public');
+ startServer({port:Number(process.env.MYPAGE_PORT||4173),editor}).then(server=>{
   const url=`http://127.0.0.1:${server.address().port}`;
-  console.log(`\nWebsite: ${url}\nEditor:  ${url}/editor/\n\nKeep this window open while editing. Ctrl+C to stop.\n`);
+  console.log(`\nWebsite: ${url}${editor?`\nEditor:  ${url}/editor/`:''}\n\nKeep this window open while previewing. Ctrl+C to stop.\n`);
 
  }).catch(err=>{console.error(err.code==='EADDRINUSE'?'Port 4173 is in use. Close the previous editor window, or set MYPAGE_PORT.':err.message);process.exitCode=1;});
 }

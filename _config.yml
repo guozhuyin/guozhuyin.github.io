@@ -1,0 +1,17 @@
+# Fallback exclusions when GitHub Pages uses a branch/Jekyll source.
+# The preferred Actions workflow publishes only dist/.
+exclude:
+  - editor
+  - content
+  - scripts
+  - public
+  - node_modules
+  - work
+  - .private
+  - .private-backups
+  - private
+  - internal
+  - package.json
+  - package-lock.json
+  - start-editor.sh
+  - README.md

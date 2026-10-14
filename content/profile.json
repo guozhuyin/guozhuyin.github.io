@@ -4,16 +4,16 @@
     "en": "Zhuyin"
   },
   "intro": {
-    "zh": "從網頁、AI 到互動系統，\n持續累積實作成果。",
-    "en": "From web development and AI to interactive systems,\nI keep building practical experience."
+    "zh": "開發網頁與互動系統，\n探索 AI 的實際應用。",
+    "en": "Developing web and interactive systems,\nexploring practical uses of AI."
   },
   "summary": {
-    "zh": "我是注音，碩士畢業，目前尋找軟體開發、資訊系統與 MIS 相關工作。從 AI 數學解題、數位教育遊戲到 Unity 互動情境，我關注如何把技術用在真實的學習與使用需求中。",
-    "en": "I’m Zhuyin, a master’s graduate seeking opportunities in software development, information systems, and MIS. My projects span AI-assisted mathematics problem solving, digital educational games, and interactive Unity environments, with a focus on practical learning and user needs."
+    "zh": "我是郭銍恩，歡迎叫我注音，碩士期間獨立建置讓學生以手寫、繪圖與文字和 AI 互動的數學解題系統，也曾以 Unity 開發數位教育遊戲、參與農作物影像辨識競賽。",
+    "en": "My name is Chih-En Kuo, and you’re welcome to call me Zhuyin. During my master’s studies, I independently built a mathematics problem-solving system that lets students interact with AI through handwriting, drawings, and text. My other projects include educational games built with Unity and a crop image classification competition."
   },
   "about": {
-    "zh": "你可以叫我注音。我已完成國立中央大學網路學習科技研究所碩士學業，目前尋找軟體開發、資訊系統與 MIS 相關工作。大學就讀亞洲大學行動商務與多媒體應用學系，雙主修資訊工程學系，也曾選修心理學課程。\n\n以 Unity 與 C# 開發數位教育遊戲、以 Python 與 PyTorch 參與農作物影像辨識競賽，也透過 PHP、MySQL、HTML 與 CSS 學習網頁建置。碩士論文的系統由我獨立開發，讓學生以圖畫和文字與 AI 互動，進行數學問題解決。\n\n國小有了自己的電腦後，我開始好奇網路與軟體如何運作。國中時，因一台使用體驗不佳的 Android 平板而查找刷機方法，動手嘗試 Recovery，並接觸 Linux 與命令列。遇到問題時查找資料、反覆嘗試的過程，讓我逐漸願意自己動手解決。高中接觸 C、Java、Python、SQL 與 PHP，也開始經營部落格；大學期間再用 WordPress 建立自己的網站。",
-    "en": "I go by Zhuyin. I have completed my master’s studies at National Central University’s Graduate Institute of Network Learning Technology and am seeking software development, information systems, and MIS roles. At Asia University, I majored in M-Commerce and Multimedia Application with a second major in Computer Science and Information Engineering, and also took psychology courses.\n\nI developed an educational game with Unity and C#, took part in a crop image classification competition using Python and PyTorch, and studied web development with PHP, MySQL, HTML, and CSS. I developed the system for my master’s thesis independently: students use drawings and text to interact with AI while solving mathematics problems.\n\nHaving my own computer in elementary school made me curious about how software and the internet work. In junior high, a slow Android tablet led me to look up ways to flash its firmware. Trying Recovery introduced me to Linux and the command line. Searching for answers and trying again when things did not work gave me the confidence to solve problems myself. In high school, I explored C, Java, Python, SQL, and PHP and started a blog. During university, I built my own website with WordPress."
+    "zh": "我本名是郭銍恩，歡迎叫我注音，目前已碩士畢業。國小有了自己的電腦後，開始好奇網路與軟體如何運作，國中時因一台使用體驗不佳的 Android 平板而查找刷機方法，動手嘗試 Recovery，並接觸 Linux 與命令列；遇到問題時查找資料、反覆嘗試的過程，逐漸養成自己動手解決問題的習慣。高中接觸 C、Java、Python、SQL 與 PHP，也開始經營部落格。\n\n大學就讀亞洲大學行動商務與多媒體應用學系，並完成資訊工程學系雙主修，當時也曾選修心理學課程，透過 WordPress 建立自己的網站；專案方面，以 Unity 與 C# 開發數位教育遊戲，並以 Python 與 PyTorch 參與農作物影像辨識競賽。\n\n碩士就讀國立中央大學網路學習科技研究所，期間獨立建置論文中的數學解題系統，整合互動畫布、PHP 後端、MySQL 資料紀錄、AI 代理協作與提示詞策略，讓學生以手寫、繪圖和文字呈現解題歷程、與 AI 協作解決問題。",
+    "en": "My name is Chih-En Kuo, and you’re welcome to call me Zhuyin. I am a recent master’s graduate. Having my own computer in elementary school sparked an interest in software and the internet. In junior high, a slow Android tablet led me to research firmware flashing, try Recovery, and explore Linux and the command line; looking up answers and trying different approaches gradually became a habit for working through problems. High school brought C, Java, Python, SQL, PHP, and my first blog.\n\nAt Asia University, I studied M-Commerce and Multimedia Application, completed a second major in Computer Science and Information Engineering, and took psychology electives. I also built my own WordPress website, developed educational games with Unity and C#, and entered a crop image classification competition using Python and PyTorch.\n\nI then pursued a master’s degree at National Central University’s Graduate Institute of Network Learning Technology. During those studies, I independently built the mathematics problem-solving system for my thesis, integrating an interactive canvas, a PHP backend, MySQL records, AI-agent coordination, and prompt strategies so students could express their reasoning through handwriting, drawings, and text while collaborating with AI."
   },
   "focus": {
     "zh": "碩士畢業 · 軟體／資訊系統／MIS 求職中",
@@ -52,8 +52,8 @@
     "TensorFlow"
   ],
   "interests": {
-    "zh": "平時會閱讀科技資訊，關注手機、穿戴裝置與電腦硬體等產品發展；休閒喜歡旅遊、象棋、黑白棋、單車、羽球與保齡球。高中畢業後，我完成期待已久的單車環島，並把沿途故事記在部落格；參加研討會時，也喜歡安排時間認識當地。在不同的兒童營隊，我曾與孩子一起生火煮飯、玩大地遊戲、蓋樹屋，陪伴他們以單車完成花蓮到臺東的路程，也協助 Minecraft 程式設計與 Python、APCS 考試輔導。這些經驗讓我發現自己喜歡與孩子相處；此外，我也曾在教會擔任兒童陪讀志工。",
-    "en": "I follow technology news, especially new phones, wearables, and computer hardware. Outside work, I enjoy travelling, chess, Reversi, cycling, badminton, and bowling. After graduating from high school, I fulfilled a long-held wish to cycle around Taiwan and recorded the journey on my blog. When attending conferences, I also like to explore the local area. Across different children’s camps, I have made fires and cooked with children, played outdoor games, built treehouses, accompanied them on a cycling trip from Hualien to Taitung, and helped with Minecraft programming and Python and APCS exam preparation. Those experiences helped me discover that I enjoy spending time with children. I have also volunteered in a church reading program for children."
+    "zh": "平時會閱讀科技資訊，關注手機、穿戴裝置與電腦硬體等產品發展，休閒喜歡旅遊、象棋、黑白棋、單車、羽球與保齡球。高中畢業後，完成期待已久的單車環島，並把沿途故事記在部落格，參加研討會時也喜歡安排時間認識當地。\n\n在不同的兒童營隊，曾與孩子一起生火煮飯、玩大地遊戲、蓋樹屋，陪伴他們以單車完成花蓮到臺東的路程，也協助 Minecraft 程式設計與 Python、APCS 考試輔導；這些經驗讓我發現自己喜歡與孩子相處，也曾在教會擔任兒童陪讀志工。",
+    "en": "I follow technology news, especially phones, wearables, and computer hardware, and enjoy travelling, chess, Reversi, cycling, badminton, and bowling. After high school, I fulfilled a long-held wish to cycle around Taiwan and recorded the journey on my blog; conference trips also offer opportunities to explore new places.\n\nAcross different children’s camps, I have joined children in making fires, cooking, outdoor games, and building treehouses, accompanied them on a cycling trip from Hualien to Taitung, and helped with Minecraft programming and Python and APCS exam preparation. Those experiences helped me discover how much I enjoy spending time with children, alongside volunteering in a church reading program."
   },
   "tools": [
     "GitHub",
@@ -70,5 +70,17 @@
     "Ubuntu"
   ],
   "quote": "永遠相信美好的事即將發生",
-  "quoteLanguage": "zh-Hant"
+  "quoteLanguage": "zh-Hant",
+  "fullName": {
+    "zh": "郭銍恩",
+    "en": "Chih-En Kuo"
+  },
+  "siteTitle": {
+    "zh": "注音｜軟體與互動系統",
+    "en": "Zhuyin | Software & Interactive Systems"
+  },
+  "quoteAttribution": {
+    "zh": "雷軍，小米創辦人",
+    "en": "Lei Jun, founder of Xiaomi"
+  }
 }

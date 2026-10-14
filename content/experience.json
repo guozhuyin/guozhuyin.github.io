@@ -1,25 +1,6 @@
 [
   {
     "title": {
-      "zh": "兒童程式營隊助教",
-      "en": "Programming camp teaching assistant"
-    },
-    "organization": {
-      "zh": "壞主意有限公司｜猿創立兒童程式營隊",
-      "en": "Coding Ape programming camps"
-    },
-    "date": "2020 -",
-    "description": {
-      "zh": "猿創立提供兒童程式設計營隊，透過 Minecraft、Python 與 APCS 相關課程，讓學生在操作與任務中接觸程式設計。\n\n擔任營隊助教，協助學生理解題目、操作程式與完成學習任務，依不同年齡和學習進度提供協助。",
-      "en": "Coding Ape offers children’s programming camps involving Minecraft, Python, and APCS-related learning through hands-on activities and tasks.\n\nAs a teaching assistant, I helped students understand questions, work with programs, and complete learning tasks, adapting support to different ages and learning progress."
-    },
-    "location": {
-      "zh": "",
-      "en": ""
-    }
-  },
-  {
-    "title": {
       "zh": "兒童營隊助教",
       "en": "Children’s camp teaching assistant"
     },
@@ -35,6 +16,25 @@
     "location": {
       "zh": "新竹，臺灣",
       "en": "Hsinchu, Taiwan"
+    }
+  },
+  {
+    "title": {
+      "zh": "兒童程式營隊助教",
+      "en": "Programming camp teaching assistant"
+    },
+    "organization": {
+      "zh": "壞主意有限公司｜猿創立兒童程式營隊",
+      "en": "Coding Ape programming camps"
+    },
+    "date": "2020 -",
+    "description": {
+      "zh": "猿創立提供兒童程式設計營隊，透過 Minecraft、Python 與 APCS 相關課程，讓學生在操作與任務中接觸程式設計。\n\n擔任營隊助教，協助學生理解題目、操作程式與完成學習任務，依不同年齡和學習進度提供協助。",
+      "en": "Coding Ape offers children’s programming camps involving Minecraft, Python, and APCS-related learning through hands-on activities and tasks.\n\nAs a teaching assistant, I helped students understand questions, work with programs, and complete learning tasks, adapting support to different ages and learning progress."
+    },
+    "location": {
+      "zh": "",
+      "en": ""
     }
   },
   {
