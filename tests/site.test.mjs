@@ -19,8 +19,8 @@ test('Bilingual HTML contains readable math content, escaped input, and working 
  try{
   const data=await loadContent();data.profile.name.zh='<script>alert(1)</script>';
   const result=await build({outDir:out,data});assert.equal(result.count,1+data.languages.filter(l=>l.enabled).length*(4+data.projects.length));
-  const html=await readFile(path.join(out,'zh/projects/ai-math/index.html'),'utf8');
-  assert.ok(html.includes('數學問題解決'));assert.ok(html.includes('<article'));assert.ok(html.includes('我的角色'));assert.ok(!html.includes('<script>alert(1)</script>'));assert.ok(html.includes('&lt;script&gt;'));
+  const html=await readFile(path.join(out,'zh/projects/mathai/index.html'),'utf8');
+  assert.ok(html.includes('<article'));assert.ok(html.includes('我的角色'));assert.ok(!html.includes('<script>alert(1)</script>'));assert.ok(html.includes('&lt;script&gt;'));
   async function walk(dir){const files=[];for(const name of await readdir(dir)){const p=path.join(dir,name);if((await stat(p)).isDirectory())files.push(...await walk(p));else files.push(p);}return files;}
   for(const privatePath of ['editor','content','old','.private','.private-backups'])await assert.rejects(stat(path.join(out,privatePath)));
   for(const file of (await walk(out)).filter(f=>f.endsWith('.html'))){
@@ -49,7 +49,6 @@ test('Education keeps the broader study scope and groups K-12 as optional detail
   assert.ok(zh.includes('CRM、ERP、MIS 的定位與基本用途'));
   assert.ok(zh.includes('<strong>居住地：</strong>新竹，臺灣（中華民國）'));
   assert.ok(zh.includes('國小有了自己的電腦後'));
-  assert.ok(zh.includes('高中畢業後，我完成期待已久的單車環島'));
   assert.ok(zh.includes('粘巴達假日學校的竹北樹屋遊戲空間於 2011 年建立'));
   assert.ok(zh.includes('我從 2019 年開始擔任兒童營隊助教'));
   assert.ok(!zh.includes('黏巴達'));
@@ -62,25 +61,25 @@ test('Education keeps the broader study scope and groups K-12 as optional detail
   const en=await readFile(path.join(out,'en/about/index.html'),'utf8');assert.ok(en.includes('Before university (K–12)'));assert.ok(en.includes('coursework in web development, programming, databases, artificial intelligence, Unity/XR, multimedia, and digital learning'));
   assert.ok(en.includes('<strong>Residence:</strong> Hsinchu, Taiwan (R.O.C.)'));
   assert.ok(en.includes('was established in Zhubei in 2011'));assert.ok(en.includes('I began assisting at its children’s camps in 2019'));
-  const game=await readFile(path.join(out,'zh/projects/learning-game/index.html'),'utf8');
-  for(const topic of ['Digital game-based learning','Analogy-based learning','Interdisciplinary learning','Role-playing game'])assert.ok(game.includes(topic));
  }finally{await rm(out,{recursive:true,force:true});}
 });
 
-test('WordPress articles provide a curated index of external links',async()=>{
+test('Home provides a writing entry and the writing page keeps its curated articles',async()=>{
  const out=await mkdtemp(path.join(tmpdir(),'mypage-articles-'));
  try{
   const data=await loadContent();assert.equal(data.articles.length,19);assert.equal(data.articles.filter(item=>item.featured).length,3);await build({outDir:out,data});
   const home=await readFile(path.join(out,'zh/index.html'),'utf8'),writing=await readFile(path.join(out,'zh/writing/index.html'),'utf8');
-  assert.equal((home.match(/class="writing-row"/g)||[]).length,3);assert.equal((writing.match(/class="writing-row"/g)||[]).length,3);
+  assert.equal((home.match(/class="writing-row"/g)||[]).length,0);assert.equal((writing.match(/class="writing-row"/g)||[]).length,3);
+  assert.ok(home.includes('href="writing/index.html">文章 ↗</a>'));
+  for(const item of data.articles)assert.ok(!home.includes(item.url));
   for(const item of data.articles.filter(item=>item.featured))assert.ok(writing.includes(item.url));
   for(const item of data.articles.filter(item=>!item.featured))assert.ok(!writing.includes(item.url));
   assert.ok(writing.includes('文章全文原刊於 WordPress'));
   assert.deepEqual(data.articles.filter(item=>item.featured).map(item=>item.category.zh),['個人故事 · 單車環島','科技觀察 · Android','實作筆記 · Android']);
-  assert.ok(home.includes('2019/08/10'));assert.ok(home.includes('系統（ROM）介紹'));assert.ok(home.includes('總結刷機流程'));
+  assert.ok(writing.includes('2019/08/10'));assert.ok(writing.includes('系統（ROM）介紹'));assert.ok(writing.includes('總結刷機流程'));
   assert.equal(data.resources.at(-1).url,'http://onclass.mypressonline.com/');
   const projects=await readFile(path.join(out,'zh/projects/index.html'),'utf8');
-  assert.ok(projects.includes('其他網站作品'));assert.ok(!projects.includes('href="http://'));
+  assert.ok(!projects.includes('其他網站作品'));assert.ok(!projects.includes('href="http://'));
  }finally{await rm(out,{recursive:true,force:true});}
 });
 
@@ -89,15 +88,15 @@ test('NSTC VR project records development leadership without overstating researc
  try{
   const data=await loadContent();await build({outDir:out,data});
   const zh=await readFile(path.join(out,'zh/projects/unity-sustainability/index.html'),'utf8');
-  assert.ok(zh.includes('我主導 Unity／VRChat SDK 學習環境開發'));
-  assert.ok(zh.includes('一位協作者'));assert.ok(zh.includes('Meta Quest 2'));assert.ok(zh.includes('Acknowledgements'));assert.ok(!zh.includes('不代表'));
+  assert.ok(zh.includes('主導 Unity／VRChat SDK 學習環境開發'));
+  assert.ok(zh.includes('一位協作者'));assert.ok(zh.includes('Meta Quest 2'));assert.ok(zh.includes('誌謝'));
   assert.ok(!zh.includes('Unity 開發參與者；負責模組待補充'));
  }finally{await rm(out,{recursive:true,force:true});}
 });
 
 test('Removing a project removes its previous generated pages',async()=>{
  const out=await mkdtemp(path.join(tmpdir(),'mypage-clean-'));
- try{const data=await loadContent();await build({outDir:out,data});data.projects=data.projects.slice(1);await build({outDir:out,data});await assert.rejects(stat(path.join(out,'zh/projects/ai-math/index.html')));}finally{await rm(out,{recursive:true,force:true});}
+ try{const data=await loadContent();await build({outDir:out,data});data.projects=data.projects.slice(1);await build({outDir:out,data});await assert.rejects(stat(path.join(out,'zh/projects/mathai/index.html')));}finally{await rm(out,{recursive:true,force:true});}
 });
 
 test('Certificate language follows Chinese-first with English fallback for other languages',async()=>{
@@ -108,7 +107,7 @@ test('Certificate language follows Chinese-first with English fallback for other
 test('Local editor persists changes, rejects conflicts and unsafe requests, and validates uploads',async()=>{
  const dir=await mkdtemp(path.join(tmpdir(),'mypage-editor-'));let server;
  try{
-  for(const item of ['scripts','content','editor','public','package.json'])await cp(path.join(ROOT,item),path.join(dir,item),{recursive:true});
+  for(const item of ['scripts','content','editor','public','package.json','404.html'])await cp(path.join(ROOT,item),path.join(dir,item),{recursive:true});
   const {startServer}=await import(pathToFileURL(path.join(dir,'scripts/server.mjs')).href);server=await startServer({port:0});const base=`http://127.0.0.1:${server.address().port}`;
   const html=await (await fetch(base+'/editor/')).text();const token=html.match(/name="editor-token" content="([^"]+)"/)[1];
   const headers={'X-Editor-Token':token,'Content-Type':'application/json','Origin':base};

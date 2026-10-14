@@ -19,7 +19,7 @@ test('A third language gets routes and editable UI while original citations rema
   const home=await readFile(path.join(out,'ja/index.html'),'utf8'),about=await readFile(path.join(out,'ja/about/index.html'),'utf8'),en=await readFile(path.join(out,'en/about/index.html'),'utf8');
   assert.ok(home.includes('lang="ja"'));assert.ok(home.includes('ホーム'));assert.ok(home.includes('永遠相信美好的事即將發生'));assert.ok(home.includes('data-theme-toggle'));assert.ok(!home.includes('data-theme-reset'));assert.ok(about.includes('<details class="publication-disclosure">'));assert.ok(about.indexOf('id="project-evidence"')<about.indexOf('id="publications"'));assert.ok(!home.includes('data-theme-select'));assert.ok(!home.includes('<script>malicious()'));assert.ok(home.includes('&lt;script&gt;'));
   for(const r of data.publications){for(const html of [about,en]){assert.ok(html.includes(r.originalTitle));if(r.authors)assert.ok(html.includes(r.authors));assert.ok(html.includes(`lang="${r.originalLanguage}" translate="no"`));}}
-  const nested=await readFile(path.join(out,'ja/projects/ai-math/index.html'),'utf8');assert.ok(nested.includes('../../../en/projects/ai-math/index.html'));
+  const nested=await readFile(path.join(out,'ja/projects/mathai/index.html'),'utf8');assert.ok(nested.includes('../../../en/projects/mathai/index.html'));
   assert.equal(resolveText({zh:'原文',en:'Original'},'ja',data.languages).text,'Original');
   data.languages.find(l=>l.id==='ja').enabled=false;await build({outDir:out,data});await assert.rejects(readFile(path.join(out,'ja/index.html')));
  }finally{await rm(out,{recursive:true,force:true});}

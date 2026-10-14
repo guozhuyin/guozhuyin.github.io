@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /editor/
+Disallow: /content/
+Disallow: /scripts/
+Sitemap: https://guozhuyin.github.io/sitemap.xml

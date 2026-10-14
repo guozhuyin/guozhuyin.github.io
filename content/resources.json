@@ -8,7 +8,8 @@
       "zh": "過往程式作品的 GitHub 入口。",
       "en": "A GitHub entry point for earlier programming work."
     },
-    "url": "https://github.com/GuoZhuyin/Zhuyin.Asia"
+    "url": "https://github.com/GuoZhuyin/Zhuyin.Asia",
+    "hidden": false
   },
   {
     "title": {
@@ -19,7 +20,8 @@
       "zh": "過往互動作品連結。",
       "en": "A link to an earlier interactive creation."
     },
-    "url": "https://edu.cospaces.io/DYF-HXW"
+    "url": "https://edu.cospaces.io/DYF-HXW",
+    "hidden": false
   },
   {
     "title": {
@@ -30,6 +32,7 @@
       "zh": "過往製作的網站作品，目前暫無可用的公開展示。",
       "en": "An earlier website project; a working public demo is currently unavailable."
     },
-    "url": "http://onclass.mypressonline.com/"
+    "url": "http://onclass.mypressonline.com/",
+    "hidden": true
   }
 ]

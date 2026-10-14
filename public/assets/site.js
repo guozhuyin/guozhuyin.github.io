@@ -1,4 +1,7 @@
 (()=>{
+ if(window.matchMedia('(max-width: 760px)').matches){
+  document.querySelectorAll('.project-toc').forEach(toc=>{toc.open=false;});
+ }
  const toggle=document.querySelector('[data-theme-toggle]');
  if(toggle){
   const system=window.matchMedia('(prefers-color-scheme: dark)');

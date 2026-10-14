@@ -7,7 +7,8 @@
     "build": "node scripts/build.mjs",
     "dev": "node scripts/server.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "npm run build && npm test"
+    "check": "npm run build && npm test",
+    "preview": "node scripts/server.mjs --public"
   },
   "engines": {
     "node": ">=18"

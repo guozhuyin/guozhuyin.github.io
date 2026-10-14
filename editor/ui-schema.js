@@ -1,4 +1,5 @@
 export const interfaceFields = {
+  emailMe: {label:"聯絡按鈕文字",type:"localized"},
   projectEvidence: {label:"專案與實作標題",type:"localized"},
   expandPublications: {label:"展開論文列表",type:"localized"},
   earlyEducation: {label:"早期教育標題",type:"localized"},
@@ -56,6 +57,11 @@ export const interfaceFields = {
     "label": "writingIntro — 記錄開發、科技與生活裡值得留下的事。",
     "type": "localized",
     "long": false
+  },
+  "writingSummary": {
+    "label": "writingSummary — 首頁文章區簡短介紹",
+    "type": "localized",
+    "long": true
   },
   "writingSourceNote": {
     "label": "writingSourceNote — 文章全文原刊於 WordPress；這裡只整理精選入口。",

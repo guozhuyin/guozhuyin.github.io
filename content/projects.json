@@ -1,6 +1,6 @@
 [
   {
-    "id": "ai-math",
+    "id": "mathai",
     "title": {
       "zh": "看見思考軌跡：AI 數學同伴",
       "en": "Making Thinking Visible: AI Mathematics Companion"
@@ -10,25 +10,27 @@
       "en": "Master’s thesis · Web application"
     },
     "summary": {
-      "zh": "獨立完成結合互動畫布與多代理 AI 的數學問題解決系統，讓學生以手寫、繪圖和文字呈現解題歷程，並取得依解題階段調整的引導。",
-      "en": "Independently built a mathematics learning system combining an interactive canvas and cooperating AI agents. Students express their reasoning through handwriting, drawings, and text, receiving guidance adapted to their problem-solving stage."
+      "zh": "整合互動畫布與多代理 AI 的數學解題系統。學生可用手寫、繪圖與文字表達思考，系統將畫布內容與近期對話交給 AI 分析，再依推估的解題階段調整引導。",
+      "en": "A mathematics problem-solving system combining an interactive canvas and multiple AI agents. Students express their reasoning through handwriting, drawings, and text; the system analyzes the canvas and recent dialogue to adapt guidance to an estimated problem-solving stage."
     },
     "role": {
-      "zh": "獨立完成整套系統開發，涵蓋前端互動畫布、後端與資料紀錄、AI 代理協作、提示詞策略及功能整合。研究分析使用的問卷與量表，參考既有文獻及學長姊的研究工具。",
-      "en": "Independently developed the complete system, including the interactive canvas, backend and data records, AI-agent coordination, prompt strategies, and feature integration. Questionnaires and scales used for research analysis drew on published literature and instruments used by senior researchers."
+      "zh": "獨立完成前端互動畫布、PHP／MySQL 後端、AI 代理協作、提示詞策略及功能整合。研究問卷與量表參考學長姊的研究工具及過往文獻。",
+      "en": "Independently built the interactive canvas, PHP/MySQL backend, AI-agent coordination, prompt strategies, and feature integration. Study questionnaires and scales drew on instruments used by senior research-group members and prior literature."
     },
     "date": "2026",
     "tags": [
-      "Web",
+      "JavaScript",
+      "Fabric.js",
+      "PHP",
+      "MySQL",
       "Multimodal AI",
-      "Interactive canvas",
       "Multi-agent"
     ],
     "featured": true,
-    "cover": "",
+    "cover": "uploads/mathai-interface.png",
     "coverAlt": {
-      "zh": "數學問題解決系統畫面",
-      "en": "Mathematics problem-solving interface"
+      "zh": "mathai 操作介面：左側呈現數學題目，中央畫布保留手寫與繪圖，右側顯示 AI 引導對話。",
+      "en": "The mathai interface: a mathematics task on the left, handwriting and drawings on the central canvas, and AI guidance on the right."
     },
     "repo": "",
     "demo": "",
@@ -36,12 +38,12 @@
     "blocks": [
       {
         "heading": {
-          "zh": "從文字對話到可見的思考歷程",
-          "en": "Making the reasoning process visible"
+          "zh": "目標與需求",
+          "en": "Goals and requirements"
         },
         "body": {
-          "zh": "針對國小高年級的幾何文字應用題，將題目、互動畫布與 AI 對話整合在同一操作介面。學生可以自由書寫、繪製幾何圖形、列式、上傳圖片及標記重點，持續留下解題與修正的軌跡。",
-          "en": "The interface brings together geometric word problems, an interactive canvas, and AI conversation for upper-elementary students. Handwriting, geometric drawing, equations, image uploads, and annotations preserve students’ evolving reasoning and revisions."
+          "zh": "國小高年級的幾何文字應用題，往往需要畫圖、列式與反覆修正，單靠文字對話不容易表達完整的推理。我希望學生能保留紙筆解題的自由度，並讓 AI 參考當下的圖形、算式、文字與修正歷程。\n\n系統定位為能反覆提問、陪伴學生思考的數學同伴。階段提示是調整引導方向的依據，目前仍屬待驗證的模型推估。",
+          "en": "Geometric word problems often require drawings, equations, and repeated revisions that are difficult to express through text alone. I wanted to preserve the flexibility of paper-based work while letting AI refer to students’ current drawings, equations, and messages.\n\nThe system is designed as a companion for repeated questions and reasoning. Stage labels guide the response strategy; they are model estimates, not validated diagnoses of a student’s abilities."
         },
         "image": "",
         "caption": {
@@ -51,27 +53,12 @@
       },
       {
         "heading": {
-          "zh": "三層架構與代理人分工",
-          "en": "Three layers and agent responsibilities"
+          "zh": "功能與流程",
+          "en": "Features and workflow"
         },
         "body": {
-          "zh": "系統分為互動層、智慧層與資料層。互動層提供響應式網頁、畫布及對話；智慧層由「數學思考狀態分析師」推估解題階段，再由「數學 AI 小幫手」整合核心與階段提示詞生成引導；資料層儲存題庫、對話、畫布事件與學習歷程。",
-          "en": "The interaction layer provides a responsive interface, canvas, and conversation. In the intelligence layer, a mathematical-thinking analyst estimates the problem-solving stage, while an AI helper combines core and stage-specific prompts to generate guidance. The data layer stores tasks, dialogue, canvas events, and learning records."
-        },
-        "image": "uploads/math-companion-architecture.png",
-        "caption": {
-          "zh": "碩士論文中的系統架構圖：互動層、智慧層及資料層。",
-          "en": "System architecture from the thesis: interaction, intelligence, and data layers."
-        }
-      },
-      {
-        "heading": {
-          "zh": "一次互動的資料流程",
-          "en": "Data flow for one interaction"
-        },
-        "body": {
-          "zh": "學生送出訊息時，系統一併擷取畫布影像與近期互動紀錄，交由分析師推估當前解題階段。AI 小幫手依分析結果與題目脈絡生成提問或同理回應，回傳介面後更新對話與操作紀錄，供下一輪互動使用。設計目標是支持思考，而非直接提供答案。",
-          "en": "When a student sends a message, the system collects the canvas image and recent interaction history. The analyst estimates the current stage, and the helper uses that result and task context to generate questions or empathetic responses. Dialogue and activity records are then updated for the next interaction. The design supports reasoning rather than simply revealing answers."
+          "zh": "介面把題目、互動畫布與 AI 對話放在同一畫面。學生可自由書寫、繪製直線與幾何圖形、調整顏色與筆觸、擦除及縮放拖曳，也能上傳紙筆照片。\n\n每次送出訊息時，系統會擷取目前畫布影像，連同文字與近期對話交由 AI 分析。回應呈現後更新互動紀錄；學生可以繼續修改畫布、補充想法，再進行下一輪對話。",
+          "en": "Tasks, the interactive canvas, and AI dialogue share one interface. Students can write freely, draw lines and geometric shapes, change colors and stroke widths, erase, pan and zoom, and upload photographs of paper-based work.\n\nEach submitted message is accompanied by a canvas snapshot and recent dialogue for AI analysis. Interaction records are updated after the response, allowing students to revise their work and continue the conversation."
         },
         "image": "",
         "caption": {
@@ -81,12 +68,42 @@
       },
       {
         "heading": {
-          "zh": "研究觀察與系統限制",
-          "en": "Pilot observations and limitations"
+          "zh": "技術與實作",
+          "en": "Technology and implementation"
         },
         "body": {
-          "zh": "研究有效樣本為 9 名五年級學生，主要觀察到文字與畫布並行的人機互動。數學焦慮與自我效能的前後測差異均未達統計顯著，因此不宣稱已證實提升學習成效。後續改進重點包括解題階段判定的驗證、不規則筆跡理解，以及減少重複制式回應。",
-          "en": "The pilot included nine fifth graders and observed interactions combining text and canvas activity. Pre–post differences in mathematics anxiety and self-efficacy were not statistically significant, so the study does not establish improved learning outcomes. Further work includes validating stage estimates, understanding irregular handwriting, and reducing repetitive responses."
+          "zh": "前端以 JavaScript 與 Fabric.js 提供畫布工具；後端以 PHP 串接 AI API，並由 MySQL 保存題庫、對話、畫布狀態與操作事件。操作日誌記錄時間、工具類型及物件新增、修改、刪除，支援研究期間的歷程分析；目前的事件紀錄仍不足以完整重建每一筆作圖順序。\n\nAI 分成「數學思考狀態分析師」與「數學 AI 小幫手」：前者整合圖文與近期脈絡，推估學生處於題意理解、策略執行或結果反思；後者組合核心提示詞、階段提示詞與題目內容，生成相應的提問。",
+          "en": "JavaScript and Fabric.js provide the canvas tools. A PHP backend connects to the AI API, while MySQL stores tasks, dialogue, canvas states, and activity events. Logs record time, tool type, and object additions, changes, and deletions for process analysis, although they do not yet reconstruct every drawing action in sequence.\n\nA mathematical-thinking analyst combines visual and textual context to estimate the problem-solving stage. A separate AI helper combines core instructions, stage-specific prompts, and task content to generate guidance."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "難點與調整",
+          "en": "Challenges and revisions"
+        },
+        "body": {
+          "zh": "實作需要把畫布、對話與學習引導接在一起，讓回應能參考當下的解題內容。提示詞除了要求不直接給答案，也限制回應長度與提問數量，並把不同階段轉成「尋找線索」、「動手建造」與「筆記大師」等介面標籤。\n\n實際使用時，學生會反覆索取答案或把對話帶離數學任務。我依互動紀錄調整核心提示詞，補上任務範圍與回應規則。這次迭代提供了改進方向，對不同輸入情境的穩定性仍需持續檢驗。",
+          "en": "The challenge was connecting the canvas, dialogue, and instructional guidance. Prompts limit response length and question count as well as discourage revealing answers. Estimated stages are presented through student-facing labels for finding clues, working through the problem, and reflecting on results.\n\nDuring use, students repeatedly requested answers or redirected the conversation away from mathematics. I revised the core prompts using interaction records to clarify task boundaries and response rules. This iteration does not establish that all off-task inputs are prevented."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "成果與限制",
+          "en": "Outcomes and limitations"
+        },
+        "body": {
+          "zh": "完成可供研究使用的整套系統，並以四週使用歷程觀察 9 名五年級學生的互動。主要觀察到文字與畫布並行的表達方式，包含繪圖、算式、標記及修正。\n\n數學自我效能與數學焦慮量表的前後測差異未達統計顯著，不能據此宣稱系統能提升能力或降低焦慮。後續重點是以人工編碼驗證階段推估、改善不規則筆跡理解，以及讓回應更具體地對應學生的實際作答，減少重複制式的鼓勵。",
+          "en": "Delivered a complete system for a four-week exploratory study with nine fifth graders. Observations focused on interactions combining text and canvas activity, including drawings, equations, annotations, and revisions.\n\nPre–post differences in mathematics self-efficacy and anxiety were not statistically significant. The study therefore does not establish improved ability or reduced anxiety. Further work includes validating stage estimates against human coding, improving irregular-handwriting interpretation, and grounding responses in students’ actual work rather than repetitive encouragement."
         },
         "image": "",
         "caption": {
@@ -97,50 +114,49 @@
     ]
   },
   {
-    "id": "learning-game",
+    "id": "bioutopia",
     "title": {
-      "zh": "夢健新生 · BioUtopia",
-      "en": "Dreaming about Health and Biology · BioUtopia"
+      "zh": "夢健新生：生命烏托邦",
+      "en": "BioUtopia · Dreaming about Health and Biology"
     },
     "category": {
       "zh": "大學專題 · TAECT 2022 第四名",
       "en": "University project · TAECT 2022 fourth place"
     },
     "summary": {
-      "zh": "以類比學習為基礎，結合國中生物與健康教育內容的跨領域角色扮演遊戲。獲 TAECT 2022 數位媒體實作競賽第四名，並發表 TWELF 2023 研討會論文。",
-      "en": "An interdisciplinary role-playing game connecting junior-high biology and health education through analogy-based learning. It received fourth place in the TAECT 2022 digital media competition and led to a conference paper at TWELF 2023."
+      "zh": "把人體器官轉化為可探索的生活場景，結合劇情、細胞角色與四種遊戲關卡，讓國一生物和健康教育內容融入第一人稱 RPG。獲 TAECT 2022 數位媒體實作競賽第四名，並於 TWELF 2023 發表。",
+      "en": "A first-person RPG that maps human organs to familiar places. Storytelling, cell characters, and four types of game challenges bring together Grade 7 biology and health education. It received fourth place at TAECT 2022 and was presented at TWELF 2023."
     },
     "role": {
-      "zh": "負責大量場景製作與 C# 程式撰寫，並準備題目及學習內容：整理國一生物課綱、閱讀數位教育研究，與組員共同完成 Unity 數位教育遊戲。",
-      "en": "Built many of the game scenes and wrote C# code. Prepared questions and learning content by reviewing the Grade 7 biology curriculum and digital education research, working with teammates on the Unity educational game."
+      "zh": "負責大量 Unity 場景製作與 C# 程式撰寫，也整理國一生物課綱、學習題目與數位教育研究，和組員共同完成遊戲。",
+      "en": "Built many Unity scenes and wrote C# code. Prepared curriculum content, questions, and digital education research with teammates to complete the game."
     },
     "date": "2022–2023",
     "tags": [
       "Unity",
       "C#",
-      "Digital game-based learning",
+      "Educational RPG",
       "Analogy-based learning",
-      "Interdisciplinary learning",
-      "Role-playing game"
+      "Biology / Health education"
     ],
     "featured": true,
-    "cover": "",
+    "cover": "uploads/bioutopia-marrow.jpeg",
     "coverAlt": {
-      "zh": "數位教育遊戲畫面",
-      "en": "Digital educational game screenshot"
+      "zh": "BioUtopia 骨髓場景：以城鎮與細胞角色呈現人體器官的類比學習，畫面包含引導對話。",
+      "en": "The BioUtopia bone-marrow scene, using a town, cell characters, and dialogue to present an analogy for learning about the human body."
     },
-    "repo": "",
+    "repo": "https://github.com/guozhuyin/BioUtopia",
     "demo": "https://youtu.be/ViEtshRl5kY",
     "paper": "https://drive.google.com/file/d/1n2QLw89tUAGv2QOhO-JWHLrrvWyK0rJz/view?usp=sharing",
     "blocks": [
       {
         "heading": {
-          "zh": "以類比學習串起跨領域知識",
-          "en": "Connecting subjects through analogy"
+          "zh": "目標與需求",
+          "en": "Goals and requirements"
         },
         "body": {
-          "zh": "專案把國中生物與健康教育內容融入角色扮演遊戲，透過類比情境與故事引導，協助學生理解課程概念。內容涵蓋生物的營養、運輸、協調與恆定，以及拒絕成癮等健康教育主題。",
-          "en": "The project brings junior-high biology and health education into a role-playing game. Analogous settings and a storyline help learners engage with concepts including nutrition, transport, coordination, homeostasis, and addiction prevention."
+          "zh": "人體細胞與器官功能不容易只靠課本文字理解，生物與健康教育也常分開學習。專案以國一課程為範圍，把養分、運輸、協調、恆定與拒絕成癮的內容放進同一段冒險。\n\n類比是場景設計的核心。例如，骨髓以「細胞誕生之地」連結幼兒園的概念；角色對話再說明生活場景與器官功能之間的對應。設計重點在於讓生活場景與要學的器官功能有清楚對應。",
+          "en": "Cell and organ functions can be difficult to understand from textbook descriptions, while biology and health topics are often taught separately. The project connects Grade 7 content on nutrition, transport, coordination, homeostasis, and addiction prevention within one adventure.\n\nAnalogy drives the setting design: for example, bone marrow is introduced as a place where cells are born and compared with a kindergarten. Dialogue explains the mapping. These analogies support understanding without replacing a full biological explanation."
         },
         "image": "",
         "caption": {
@@ -150,12 +166,27 @@
       },
       {
         "heading": {
-          "zh": "競賽與論文成果",
-          "en": "Competition and publication"
+          "zh": "功能與流程",
+          "en": "Features and workflow"
         },
         "body": {
-          "zh": "TAECT 2022 數位媒體實作競賽第四名。\nTWELF 2023 研討會論文：以類比學習為基礎開發之國中生物與健康跨領域角色扮演遊戲。",
-          "en": "Fourth place in the TAECT 2022 digital media competition.\nPresented as a conference paper at TWELF 2023. The original paper title is listed in Publications."
+          "zh": "玩家在夢境中遇見小精靈，以第一人稱探索人體器官的類比場景。靠近細胞角色時出現對話，先理解場景中的知識，再把內容用於關卡。完成主要關卡後可返回先前場景，結束時提供回饋表單及是否儲存遊戲的選項。\n\n團隊安排四種關卡：翻牌配對細胞資訊、選擇題、限時穿越正確門的是非題，以及隱藏的打地鼠。不同關卡採不同計分與通關條件，讓學習題目成為遊戲行動的一部分。",
+          "en": "Players meet a guide in a dream and explore organ-inspired settings from a first-person perspective. Approaching cell characters opens dialogue; knowledge from each scene is then used in game challenges. After the main challenges, players can revisit earlier scenes and access feedback and save options.\n\nThe team created four challenge types: matching cell-information cards, multiple-choice questions, timed true/false gates, and a hidden whack-a-mole game. Each uses different scoring and progression rules."
+        },
+        "image": "uploads/bioutopia-card-match.png",
+        "caption": {
+          "zh": "翻牌配對關卡把細胞名稱、角色與功能說明放進可操作的題目。",
+          "en": "The matching challenge combines cell names, characters, and functional descriptions in an interactive task."
+        }
+      },
+      {
+        "heading": {
+          "zh": "技術與實作",
+          "en": "Technology and implementation"
+        },
+        "body": {
+          "zh": "以 Unity 組裝場景、角色、對話框、圖片與動畫，再以 C# 處理角色互動、事件觸發及關卡進程。教材中的知識需要轉成玩家能看見、操作或回答的內容。\n\n專案整合 Unity Asset Store、Sketchfab 與自行製作的素材，角色設計使用 3ds Max、Mixamo，語音採 Azure 文字轉語音。這些是團隊的素材與工具配置；我的主要負責範圍是場景、程式及學習內容。",
+          "en": "Unity integrates scenes, characters, dialogue, images, and animation. C# handles character interactions, event triggers, and level progression. Curriculum concepts are translated into things players can observe, operate, or answer.\n\nThe team combined Unity Asset Store and Sketchfab assets with its own materials, used 3ds Max and Mixamo for characters, and Azure text-to-speech for voices. My main responsibilities were scenes, code, and learning content."
         },
         "image": "",
         "caption": {
@@ -165,12 +196,27 @@
       },
       {
         "heading": {
-          "zh": "我的實作分工",
-          "en": "My implementation work"
+          "zh": "難點與調整",
+          "en": "Challenges and revisions"
         },
         "body": {
-          "zh": "在 Unity 中製作場景並撰寫遊戲程式，讓課程內容能在遊戲中呈現。同時準備學習題目與教材，將國一生物課綱及相關研究整理為遊戲內容。",
-          "en": "I built Unity scenes and wrote game code to present learning content through play. I also prepared questions and materials informed by the Grade 7 biology curriculum and related research."
+          "zh": "需要同時顧到教材對應、遊戲節奏與程式規則。例如，選擇題答錯後移除該選項，直到答對才繼續；是非題則加入限時與全數答對的通關條件。同樣是題目，互動與回饋方式會隨關卡改變。\n\n開發時依階段安排組員互相試玩，再調整故事、介面與程式錯誤。類比關係也需要透過對話說清楚，避免玩家只記住場景名稱，卻沒有理解要學的概念。",
+          "en": "Development had to balance curriculum mappings, pacing, and progression rules. Incorrect multiple-choice options disappear until the correct answer is chosen, while true/false gates add time limits and require all answers to be correct. Feedback differs by challenge.\n\nTeam members tested completed stages and revised the story, interface, and bugs. Dialogue also needed to make each analogy explicit so players could connect the setting with the intended concept."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "成果與限制",
+          "en": "Outcomes and limitations"
+        },
+        "body": {
+          "zh": "完成包含學習場景、角色對話與四種關卡的教育 RPG，獲 TAECT 2022 數位媒體實作競賽第四名，並以「以類比學習為基礎開發之國中生物與健康跨領域角色扮演遊戲」於 TWELF 2023 發表。\n\nTWELF 2023 論文記錄的是遊戲開發與設計，當時尚未進行教學實驗；遊戲的學習成效仍待實證評估。",
+          "en": "Completed an educational RPG with learning scenes, character dialogue, and four challenge types. It received fourth place in the TAECT 2022 digital media competition and was presented at TWELF 2023.\n\nThe TWELF 2023 paper reports game development and design before a classroom experiment had been conducted. Learning effectiveness still requires empirical evaluation."
         },
         "image": "",
         "caption": {
@@ -191,26 +237,27 @@
       "en": "NSTC research project · Unity/VRChat SDK development"
     },
     "summary": {
-      "zh": "主導以 Unity 與 VRChat SDK 開發可在 Meta Quest 2 使用的沉浸式學習環境，讓國中生能進入虛擬世界互動，探索永續發展相關內容。",
-      "en": "Led the Unity and VRChat SDK development of an immersive learning environment for Meta Quest 2, enabling junior-high students to interact in a virtual world and explore sustainability-related content."
+      "zh": "以 Unity／VRChat SDK 建置支援多人互動的沉浸式學習環境，結合國中 STEM 與 SDGs。以氣候行動的小島場景為例，學生可探索海平面上升議題，並在環境中討論、整理想法。",
+      "en": "An immersive learning environment built with Unity and the VRChat SDK to support multi-user interaction around junior-high STEM and the SDGs. An island scene for climate action lets students explore sea-level rise and discuss their ideas within the environment."
     },
     "role": {
-      "zh": "我主導 Unity／VRChat SDK 學習環境開發，與一位協作者討論需求、分派協作事項並整合成果。",
-      "en": "I led the Unity/VRChat SDK learning-environment development, discussing requirements with one collaborator, assigning development tasks, and integrating the results."
+      "zh": "主導 Unity／VRChat SDK 學習環境開發，與一位協作者討論需求、拆分工作並整合成果；負責把計畫中的學習情境做成可操作的虛擬場景。",
+      "en": "Led the Unity/VRChat SDK environment development with one collaborator, discussing requirements, dividing tasks, and integrating the work into usable virtual learning scenes."
     },
     "date": "2023–2026",
     "tags": [
       "Unity",
       "VRChat SDK",
       "Meta Quest 2",
+      "Collaborative learning",
       "STEM",
       "SDGs"
     ],
     "featured": true,
-    "cover": "",
+    "cover": "uploads/stemivr-unity.jpeg",
     "coverAlt": {
-      "zh": "Unity 互動場景",
-      "en": "Unity interactive environment"
+      "zh": "Unity 中的 VRChat 小島學習場景開發畫面，右側可見 VRChat SDK 設定。",
+      "en": "Development of an island learning scene in Unity, with VRChat SDK settings visible on the right."
     },
     "repo": "",
     "demo": "",
@@ -218,12 +265,12 @@
     "blocks": [
       {
         "heading": {
-          "zh": "Unity／VRChat SDK 學習環境",
-          "en": "A Unity/VRChat SDK learning environment"
+          "zh": "目標與需求",
+          "en": "Goals and requirements"
         },
         "body": {
-          "zh": "以 Unity 串接 VRChat SDK，製作可在 Meta Quest 2 使用的沉浸式學習環境，讓國中生進入虛擬世界探索 SDGs 第 13 項「氣候行動」相關內容。",
-          "en": "Using Unity with the VRChat SDK, I built an immersive learning environment for Meta Quest 2. Junior-high students can enter a virtual world to explore content related to SDG 13, Climate Action."
+          "zh": "國科會計畫希望建立沉浸式 VR 合作學習的模式，並在後續階段研究合作鷹架。我的開發工作聚焦學習環境：學生除了各自看見場景，也需要能在同一虛擬世界中交流與合作。\n\nGCCCE 2024 論文以國中八年級教材、STEM 與 SDGs 為設計基礎，把永續議題轉成可探索、討論及反思的學習情境。",
+          "en": "The NSTC project aims to establish models for immersive VR collaborative learning and investigate collaboration scaffolds in later phases. My development work focused on an environment where students can communicate and collaborate in a shared virtual world.\n\nThe GCCCE 2024 paper uses Grade 8 content, STEM, and the SDGs to turn sustainability issues into situations for exploration, discussion, and reflection."
         },
         "image": "",
         "caption": {
@@ -233,12 +280,57 @@
       },
       {
         "heading": {
-          "zh": "我主導的開發協作",
-          "en": "Development leadership and collaboration"
+          "zh": "功能與流程",
+          "en": "Features and workflow"
         },
         "body": {
-          "zh": "由我主導開發方向與工作拆分，與一位協作者討論實作方式、交派協作事項，再將各自完成的內容整合到學習環境中。相關教授的期刊論文以 Acknowledgements 誌謝這項開發協作。",
-          "en": "I led the development direction and task breakdown, discussed implementation with one collaborator, assigned development work, and integrated the completed pieces into the learning environment. The related professor’s journal paper acknowledges this development contribution."
+          "zh": "學生使用 Meta Quest 2 進入 VRChat 的虛擬環境，以化身探索場景，透過語音與同伴交流。學習內容結合多媒體素材與互動物件，讓小組可觀察、表達及統整想法。\n\n氣候行動場景以小型海島國為例，呈現海平面上升相關內容，搭配影片、照片及圖表，引導學生討論溫室氣體、能源選擇與生活中的環境行動。畫筆、便利貼與拼圖是論文中用來支持表達及整理想法的互動設計。",
+          "en": "Students enter the VRChat environment using Meta Quest 2, explore as avatars, and communicate with peers through voice. Multimedia and interactive objects support observation, expression, and organizing ideas.\n\nThe climate-action example is a small island setting with material on sea-level rise, greenhouse gases, energy choices, and everyday environmental actions. The paper describes pens, sticky notes, and puzzles as ways to support expression and discussion."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "技術與實作",
+          "en": "Technology and implementation"
+        },
+        "body": {
+          "zh": "以 Unity 製作虛擬場景，再透過 VRChat SDK 串接平台功能及頭戴式裝置體驗。場景內容、互動素材與多人交流需要一起考慮，才能把學習活動放進實際可用的環境。\n\n論文比較多種虛擬平台後採用 VRChat，考量包含多人交流、Unity SDK 的開發彈性與裝置支援。這些需求共同形成當時的選型依據。",
+          "en": "Unity provides the virtual scenes, while the VRChat SDK connects them with platform features and headset-based use. Scene content, interactive materials, and multi-user communication are considered together.\n\nThe paper selected VRChat after comparing several virtual platforms, considering communication, Unity SDK flexibility, and device support. These describe the selection at that time, not a current feature comparison."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "難點與調整",
+          "en": "Challenges and revisions"
+        },
+        "body": {
+          "zh": "合作學習的場景需要支援共同討論與想法整理，互動方式也是場景設計的一部分。我把需求拆成場景與互動工作，和協作者討論各自負責的內容，再整合到同一學習環境。\n\n頭戴式裝置的操作適應、網路連線與平台更新，也會影響使用與研究安排。GCCCE 2024 論文將這些列為限制；後續需透過實際裝置操作與使用紀錄評估體驗。",
+          "en": "Collaborative learning requires a space for shared discussion, beyond a single-user 3D presentation. I divided scene and interaction work with the collaborator and integrated the results into one environment.\n\nHeadset familiarity, connectivity, and platform updates can affect use. The GCCCE 2024 paper identifies these limitations; device-based testing and usage records are needed to assess the experience."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "成果與限制",
+          "en": "Outcomes and limitations"
+        },
+        "body": {
+          "zh": "完成 Unity／VRChat SDK 學習環境的開發協作，相關設計以「支持學生於元宇宙社交互動並結合 STEM 與 SDGs 的沉浸式虛擬實境學習環境開發」於 GCCCE 2024 發表。後續教授的期刊論文也在誌謝中記錄這項開發協作。\n\nGCCCE 2024 論文記錄的是環境設計與開發，發表時尚未完成實證研究。這個階段的成果是虛擬場景、互動設計與平台整合；學習成效仍需另外驗證。",
+          "en": "Completed the Unity/VRChat SDK environment development collaboration. The design was presented at GCCCE 2024, and a later journal paper acknowledged the development contribution.\n\nThe GCCCE 2024 paper reports environment design and development before an empirical study had been completed. Virtual scenes, interaction design, and platform integration are the development outcomes; learning effectiveness requires separate evaluation."
         },
         "image": "",
         "caption": {
