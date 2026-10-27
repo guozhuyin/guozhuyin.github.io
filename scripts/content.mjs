@@ -27,6 +27,7 @@ export function validate(data){
     if(f.type==='languageTag'){try{if(!v)throw Error();Intl.getCanonicalLocales(v);}catch{errors.push(`${l}：請使用有效的語言代碼，例如 zh-Hant 或 en`);}}
     if(f.type==='slug'&&!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(v))errors.push(`${l}：請使用小寫英數和連字號`);
     if(f.type==='image'&&v&&!/^uploads\/[a-zA-Z0-9._-]+\.(png|jpe?g|webp|gif|svg)$/i.test(v))errors.push(`${l}：請使用上傳功能或 uploads/ 內的圖片`);
+    if(f.type==='pdf'&&v&&!(/^uploads\/[a-zA-Z0-9._-]+\.pdf$/i.test(v)||/^https:\/\/[^\s]+$/i.test(v)))errors.push(`${l}：請上傳 PDF，或填入 uploads/ 內的 PDF 路徑或完整 HTTPS 網址`);
     if(f.type==='link'&&v&&!safeLink(v))errors.push(`${l}：請填完整 https:// 網址或 uploads/ 檔案路徑`);
     if(f.type==='email'&&v&&!/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(v))errors.push(`${l}：Email 格式錯誤`);
    }

@@ -1,0 +1,120 @@
+/* Typography from the complete original stylesheet (Git edf5cc2).
+   Keep the source cascade, including its responsive and print rules.
+   Layout, colors and component decoration stay in site.css. */
+:root { font-size: max(100%, 16px); }
+body { font: 1rem / 1.8 Inter, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+button, input, select, textarea { font: inherit; line-height: inherit; }
+h1, h2, h3 { line-height: 1.35; font-weight: 650; }
+h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: -0.035em; }
+h2 { font-size: clamp(1.7rem, 2.6vw, 2.5rem); letter-spacing: -0.025em; }
+h3 { font-size: 1.22rem; }
+small { font-size: 1rem; }
+.brand { font-size: 1.06rem; font-weight: 700; }
+.brand-symbol { font-size: 1.8rem; line-height: 1; }
+.site-header nav a { font-size: 1rem; text-wrap-mode: nowrap; }
+.site-header nav a[aria-current] { font-weight: 700; }
+.eyebrow { font-size: 1rem; font-weight: 600; letter-spacing: 0.04em; }
+.hero-eyebrow { text-wrap-mode: initial; text-wrap-style: balance; }
+.hero h1 { text-wrap-mode: initial; text-wrap-style: balance; font-weight: 700; line-height: 1.38; }
+.hero-description { font-size: 1.08rem; line-height: 1.95; }
+.button { font-weight: 650; }
+.text-link { font-weight: 600; font-size: 1rem; text-wrap-mode: wrap; }
+.art-number { font: 500 clamp(3rem, 6vw, 5rem) / 1 Georgia, serif; line-height: 1; letter-spacing: -0.06em; }
+.art-type { font-size: 1rem; line-height: 1.5; letter-spacing: 0.04em; }
+.project-copy .eyebrow { font-size: 1rem; }
+.project-copy h3 { font-size: 1.35rem; }
+.project-copy h3 a span { font-size: 1rem; }
+.project-copy > p { font-size: 1rem; }
+.tags li { font-size: 1rem; }
+.note-mark { font-size: 2.3rem; line-height: 1.2; }
+.contact-email { font-size: 1rem; font-weight: 600; }
+.top-link { font-size: 1rem; text-wrap-mode: nowrap; }
+.footer-bottom { font-size: 1rem; }
+.page-heading > p:not(.eyebrow) { font-size: 1.1rem; }
+.count { font: 1.2rem / 1.5 monospace; line-height: 1.5; letter-spacing: 0px; }
+.back-link { font-size: 1rem; }
+.detail-heading h1 { font-size: clamp(2.25rem, 4.4vw, 3.75rem); }
+.lead { font-size: 1.2rem; line-height: 1.85; }
+.article-aside { font-size: 1rem; }
+.article-aside h2 { font-size: 1rem; }
+.prose { line-height: 1.95; }
+.prose h2 { font-size: 1.7rem; }
+.prose figcaption { font-size: 1rem; }
+.translation-note { font-size: 1rem; }
+.next-project span { font-size: 1rem; }
+.next-project a { font-size: 1.25rem; font-weight: 600; }
+.about-section h2 { font-size: 1.8rem; }
+.skill-list li { font-size: 1rem; }
+.timeline-meta { font-size: 1rem; }
+.certificate p { font-size: 1rem; }
+.writing-row h3 { font-size: 1.5rem; }
+.sr-only { text-wrap-mode: nowrap; }
+@media (min-width: 1400px) {
+.hero h1 { font-size: 4.5rem; }
+}
+@media (max-width: 1050px) {
+.hero h1 { font-size: 3.25rem; }
+}
+@media (max-width: 760px) {
+.hero h1 { font-size: clamp(2.25rem, 7.5vw, 3.5rem); }
+.hero-description { font-size: 1rem; }
+.section-heading h2 { font-size: 1.65rem; }
+.section-heading > .text-link { font-size: 1rem; }
+.art-number { font-size: 5rem; }
+.detail-heading h1 { font-size: 2.4rem; }
+.top-link { font-size: 1rem; }
+}
+@media print {
+h1 { font-size: 26pt; }
+h2 { font-size: 18pt; }
+body { font-size: 12pt; }
+}
+.contribution h2 { font-size: 1.1rem; }
+.award-result { font-size: 1.8rem; font-weight: 700; }
+.publication h3 { font-size: 1.35rem; }
+.personal-motto { font-family: Georgia, "Noto Serif TC", "Microsoft JhengHei", serif; font-size: 1.15rem; line-height: 1.9; }
+.about-page > .personal-motto { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+.theme-toggle { font-size: 1.3rem; line-height: 1; }
+.language-picker { font-size: 1rem; }
+.language-picker summary { font-weight: 600; }
+.language-picker a { text-wrap-mode: nowrap; }
+.language-picker a[aria-current] { font-weight: 700; }
+.publication-authors { font-size: 1rem; line-height: 1.8; }
+@media (max-width: 440px) {
+.brand { font-size: 1rem; }
+}
+.hero h1 { font-size: clamp(2.3rem, 4.8vw, 4rem); }
+.project-copy .card-role { font-size: 1rem; line-height: 1.8; }
+.card-role strong { font-weight: 650; }
+.about-page > .personal-motto { font-size: 1.2rem; }
+.evidence-row h3 { font-size: 1.2rem; }
+.evidence-row .evidence-role { font-size: 1rem; line-height: 1.8; }
+.publication-disclosure summary { font-weight: 600; }
+.publication-count { font-size: 1rem; }
+.publication-disclosure .publication h3 { font-size: 1rem; line-height: 1.65; }
+.publication-disclosure .publication .eyebrow { font-size: 1rem; letter-spacing: 0px; text-transform: none; }
+.publication-disclosure .publication-authors { font-size: 1rem; }
+.project-copy h2 { font-size: 1.35rem; }
+.project-copy h2 a span { font-size: 1rem; }
+.social-link { font-size: 1rem; font-weight: 600; }
+.timeline-meta .location { font-size: 1rem; }
+.early-education-disclosure summary { font-weight: 600; }
+.proof-disclosure summary { font-size: 1rem; }
+.proof-disclosure summary.proof-summary { font-size: 1.15rem; font-weight: 650; }
+.award-project-link .text-link { font-size: 1rem; }
+.source-note { font-size: 1rem !important; }
+.personal-quote figcaption { font-size: 1rem; }
+.about-page > .personal-quote .personal-motto { font-size: 1.2rem; }
+.project-toc summary { font-size: 1rem; font-weight: 650; }
+.hero-heading-line { text-wrap-mode: initial; text-wrap-style: balance; }
+.hero-focus { text-wrap-mode: initial; text-wrap-style: balance; }
+
+/* Current layout mappings and explicit user corrections. */
+.hero-focus { font-size:1rem; }
+.hero-intro { font-size:clamp(1.75rem,3.6vw,3rem); font-weight:700; line-height:1.38; letter-spacing:-.035em; text-wrap:balance; }
+.project-index { font:400 2rem/1.5 Georgia,serif; }
+.footer-signature>span { font-size:1.1rem; }
+.language-picker a { font-size:1rem; }
+@media(max-width:760px) {
+  .project-index { font-size:1.5rem; }
+}

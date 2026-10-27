@@ -1,9 +1,7 @@
 export const SITE_URL = 'https://guozhuyin.github.io';
 
 export function canonicalURL(language, route, defaultLanguage) {
-  const pathname = !route && language === defaultLanguage
-    ? '/'
-    : `/${language}/${route ? `${route}/` : ''}`;
+  const pathname = `/${language}/${route ? `${route}/` : ''}`;
   return new URL(pathname, SITE_URL).href;
 }
 

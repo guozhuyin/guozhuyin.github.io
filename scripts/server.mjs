@@ -12,10 +12,11 @@ function uploadType(buffer){
  if(buffer[0]===255&&buffer[1]===216&&buffer[2]===255)return 'jpg';
  if(['GIF87a','GIF89a'].includes(buffer.subarray(0,6).toString()))return 'gif';
  if(buffer.subarray(0,4).toString()==='RIFF'&&buffer.subarray(8,12).toString()==='WEBP')return 'webp';
+ if(/^%PDF-\d\.\d\s/.test(buffer.subarray(0,16).toString('ascii'))&&buffer.subarray(-1024).includes(Buffer.from('%%EOF')))return 'pdf';
  return null;
 }
 export async function startServer({port=4173,editor=true}={}){
- await build();const token=randomBytes(32).toString('hex');let saving=false;
+ await build();const token=randomBytes(32).toString('hex');let saving=false,pendingUploads=0;
  const server=http.createServer(async(req,res)=>{
   const json=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
   const activePort=server.address().port;
@@ -33,18 +34,28 @@ export async function startServer({port=4173,editor=true}={}){
     if(req.method==='GET'&&pathname==='/api/content'){const data=await loadContent();json(200,{data,revision:digest(data)});return;}
     if(req.method!=='POST'){json(405,{error:'不支援的操作'});return;}
     if(!req.headers['content-type']?.startsWith('application/json')){json(415,{error:'請使用 JSON 格式'});return;}
-    let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;if(size>10*1024*1024){json(413,{error:'資料過大，圖片上限為 6 MB。'});return;}chunks.push(chunk);}
+    let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;if(size>16*1024*1024){json(413,{error:'資料過大。圖片最多 6 MB，PDF 最多 10 MB。'});return;}chunks.push(chunk);}
     let body;try{body=JSON.parse(Buffer.concat(chunks).toString());}catch{json(400,{error:'資料不是有效的 JSON'});return;}
     if(pathname==='/api/upload'){
-     if(typeof body.data!=='string'){json(400,{error:'缺少圖片'});return;}
+     if(typeof body.data!=='string'){json(400,{error:'缺少檔案內容'});return;}
+     if(body.kind!==undefined&&!['image','pdf'].includes(body.kind)){json(400,{error:'不支援的上傳欄位'});return;}
      const buffer=Buffer.from(body.data,'base64'),ext=uploadType(buffer);
-     if(!ext||buffer.length>6*1024*1024){json(400,{error:'請選擇 6 MB 以下的 PNG、JPEG、WebP 或 GIF 圖片。'});return;}
+     if(!ext){json(400,{error:'檔案格式無法辨識。請選擇 PNG、JPEG、WebP、GIF 圖片或 PDF。'});return;}
+     const kind=ext==='pdf'?'pdf':'image';
+     if(body.kind&&body.kind!==kind){json(400,{error:body.kind==='pdf'?'這個欄位只能上傳 PDF。':'這個欄位只能上傳 PNG、JPEG、WebP 或 GIF 圖片。'});return;}
+     if(buffer.length>(kind==='pdf'?10:6)*1024*1024){json(413,{error:kind==='pdf'?'PDF 上限為 10 MB。':'圖片上限為 6 MB。'});return;}
+     if(saving){json(409,{error:'網站正在儲存，請完成後再上傳檔案。'});return;}
      const file=`uploads/${randomUUID()}.${ext}`;
-     await mkdir(path.join(ROOT,'public/uploads'),{recursive:true});await writeFile(path.join(ROOT,'public',file),buffer);await mkdir(path.join(ROOT,'dist/uploads'),{recursive:true});await writeFile(path.join(ROOT,'dist',file),buffer);
-     json(200,{path:file});return;
+     pendingUploads++;
+     try{
+      await mkdir(path.join(ROOT,'public/uploads'),{recursive:true});await writeFile(path.join(ROOT,'public',file),buffer);await mkdir(path.join(ROOT,'dist/uploads'),{recursive:true});await writeFile(path.join(ROOT,'dist',file),buffer);
+      json(200,{path:file,type:ext,size:buffer.length});
+     }finally{pendingUploads--;}
+     return;
     }
     if(pathname==='/api/save'){
      if(saving){json(409,{error:'正在儲存，請稍後再試。'});return;}
+     if(pendingUploads){json(409,{error:'檔案正在上傳，請完成後再儲存。'});return;}
      saving=true;const stage=path.join(ROOT,`.build-${randomUUID()}`);
      let original;
      try{
@@ -80,7 +91,9 @@ export async function startServer({port=4173,editor=true}={}){
     if(file!==root&&!file.startsWith(root+path.sep)){json(403,{error:'無效路徑'});return;}
     if((await stat(file)).isDirectory())file=path.join(file,'index.html');
    }
-   const content=await readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});res.end(req.method==='HEAD'?'':content);
+   const content=await readFile(file),extension=path.extname(file).toLowerCase();
+   if(extension==='.pdf'){res.setHeader('X-Frame-Options','SAMEORIGIN');res.setHeader('Content-Security-Policy',"frame-ancestors 'self'");}
+   res.writeHead(200,{'Content-Type':mime[extension]||'application/octet-stream','Cache-Control':'no-store'});res.end(req.method==='HEAD'?'':content);
   }catch{res.writeHead(404,{'Content-Type':mime['.html']});res.end(await readFile(path.join(ROOT,'dist/404.html')));}
  });
  await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(port,'127.0.0.1',resolve);});

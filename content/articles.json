@@ -379,7 +379,7 @@
       "en": "A summary of the Android flashing workflow"
     },
     "summary": {
-      "zh": "用一張流程整理 Android 刷機的主要順序：解鎖 Bootloader、刷入 Recovery、安裝 ROM 與可選的 GApps／Root，並提醒操作風險。",
+      "zh": "用一張流程整理 Android 刷機的主要順序：解鎖 Bootloader、刷入 Recovery、安裝 ROM 與可選的 GApps / Root，並提醒操作風險。",
       "en": "A compact workflow for Android flashing: unlock the Bootloader, flash a Recovery, install a ROM, and optionally add GApps or Root, with a reminder that the process carries risk."
     },
     "category": {

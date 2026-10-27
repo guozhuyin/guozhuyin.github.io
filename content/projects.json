@@ -14,8 +14,8 @@
       "en": "A mathematics problem-solving system combining an interactive canvas and multiple AI agents. Students express their reasoning through handwriting, drawings, and text; the system analyzes the canvas and recent dialogue to adapt guidance to an estimated problem-solving stage."
     },
     "role": {
-      "zh": "獨立完成前端互動畫布、PHP／MySQL 後端、AI 代理協作、提示詞策略及功能整合。研究問卷與量表參考學長姊的研究工具及過往文獻。",
-      "en": "Independently built the interactive canvas, PHP/MySQL backend, AI-agent coordination, prompt strategies, and feature integration. Study questionnaires and scales drew on instruments used by senior research-group members and prior literature."
+      "zh": "獨立完成前端互動畫布、PHP / MySQL 後端、AI 代理協作、提示詞策略及功能整合。研究問卷與量表參考學長姊的研究工具及過往文獻。",
+      "en": "Independently built the interactive canvas, PHP / MySQL backend, AI-agent coordination, prompt strategies, and feature integration. Study questionnaires and scales drew on instruments used by senior research-group members and prior literature."
     },
     "date": "2026",
     "tags": [
@@ -111,7 +111,8 @@
           "en": ""
         }
       }
-    ]
+    ],
+    "links": []
   },
   {
     "id": "bioutopia",
@@ -171,7 +172,7 @@
         },
         "body": {
           "zh": "玩家在夢境中遇見小精靈，以第一人稱探索人體器官的類比場景。靠近細胞角色時出現對話，先理解場景中的知識，再把內容用於關卡。完成主要關卡後可返回先前場景，結束時提供回饋表單及是否儲存遊戲的選項。\n\n團隊安排四種關卡：翻牌配對細胞資訊、選擇題、限時穿越正確門的是非題，以及隱藏的打地鼠。不同關卡採不同計分與通關條件，讓學習題目成為遊戲行動的一部分。",
-          "en": "Players meet a guide in a dream and explore organ-inspired settings from a first-person perspective. Approaching cell characters opens dialogue; knowledge from each scene is then used in game challenges. After the main challenges, players can revisit earlier scenes and access feedback and save options.\n\nThe team created four challenge types: matching cell-information cards, multiple-choice questions, timed true/false gates, and a hidden whack-a-mole game. Each uses different scoring and progression rules."
+          "en": "Players meet a guide in a dream and explore organ-inspired settings from a first-person perspective. Approaching cell characters opens dialogue; knowledge from each scene is then used in game challenges. After the main challenges, players can revisit earlier scenes and access feedback and save options.\n\nThe team created four challenge types: matching cell-information cards, multiple-choice questions, timed true / false gates, and a hidden whack-a-mole game. Each uses different scoring and progression rules."
         },
         "image": "uploads/bioutopia-card-match.png",
         "caption": {
@@ -201,7 +202,7 @@
         },
         "body": {
           "zh": "需要同時顧到教材對應、遊戲節奏與程式規則。例如，選擇題答錯後移除該選項，直到答對才繼續；是非題則加入限時與全數答對的通關條件。同樣是題目，互動與回饋方式會隨關卡改變。\n\n開發時依階段安排組員互相試玩，再調整故事、介面與程式錯誤。類比關係也需要透過對話說清楚，避免玩家只記住場景名稱，卻沒有理解要學的概念。",
-          "en": "Development had to balance curriculum mappings, pacing, and progression rules. Incorrect multiple-choice options disappear until the correct answer is chosen, while true/false gates add time limits and require all answers to be correct. Feedback differs by challenge.\n\nTeam members tested completed stages and revised the story, interface, and bugs. Dialogue also needed to make each analogy explicit so players could connect the setting with the intended concept."
+          "en": "Development had to balance curriculum mappings, pacing, and progression rules. Incorrect multiple-choice options disappear until the correct answer is chosen, while true / false gates add time limits and require all answers to be correct. Feedback differs by challenge.\n\nTeam members tested completed stages and revised the story, interface, and bugs. Dialogue also needed to make each analogy explicit so players could connect the setting with the intended concept."
         },
         "image": "",
         "caption": {
@@ -224,7 +225,8 @@
           "en": ""
         }
       }
-    ]
+    ],
+    "links": []
   },
   {
     "id": "unity-sustainability",
@@ -233,16 +235,16 @@
       "en": "Advancing metaverse education: Exploring new possibilities of immersive VR-based collaborative learning"
     },
     "category": {
-      "zh": "國科會計畫 · Unity／VRChat SDK 開發",
-      "en": "NSTC research project · Unity/VRChat SDK development"
+      "zh": "國科會計畫 · Unity / VRChat SDK 開發",
+      "en": "NSTC research project · Unity / VRChat SDK development"
     },
     "summary": {
-      "zh": "以 Unity／VRChat SDK 建置支援多人互動的沉浸式學習環境，結合國中 STEM 與 SDGs。以氣候行動的小島場景為例，學生可探索海平面上升議題，並在環境中討論、整理想法。",
+      "zh": "以 Unity / VRChat SDK 建置支援多人互動的沉浸式學習環境，結合國中 STEM 與 SDGs。以氣候行動的小島場景為例，學生可探索海平面上升議題，並在環境中討論、整理想法。",
       "en": "An immersive learning environment built with Unity and the VRChat SDK to support multi-user interaction around junior-high STEM and the SDGs. An island scene for climate action lets students explore sea-level rise and discuss their ideas within the environment."
     },
     "role": {
-      "zh": "主導 Unity／VRChat SDK 學習環境開發，與一位協作者討論需求、拆分工作並整合成果；負責把計畫中的學習情境做成可操作的虛擬場景。",
-      "en": "Led the Unity/VRChat SDK environment development with one collaborator, discussing requirements, dividing tasks, and integrating the work into usable virtual learning scenes."
+      "zh": "主導 Unity / VRChat SDK 學習環境開發，與一位協作者討論需求、拆分工作並整合成果；負責把計畫中的學習情境做成可操作的虛擬場景。",
+      "en": "Led the Unity / VRChat SDK environment development with one collaborator, discussing requirements, dividing tasks, and integrating the work into usable virtual learning scenes."
     },
     "date": "2023–2026",
     "tags": [
@@ -284,8 +286,8 @@
           "en": "Features and workflow"
         },
         "body": {
-          "zh": "學生使用 Meta Quest 2 進入 VRChat 的虛擬環境，以化身探索場景，透過語音與同伴交流。學習內容結合多媒體素材與互動物件，讓小組可觀察、表達及統整想法。\n\n氣候行動場景以小型海島國為例，呈現海平面上升相關內容，搭配影片、照片及圖表，引導學生討論溫室氣體、能源選擇與生活中的環境行動。畫筆、便利貼與拼圖是論文中用來支持表達及整理想法的互動設計。",
-          "en": "Students enter the VRChat environment using Meta Quest 2, explore as avatars, and communicate with peers through voice. Multimedia and interactive objects support observation, expression, and organizing ideas.\n\nThe climate-action example is a small island setting with material on sea-level rise, greenhouse gases, energy choices, and everyday environmental actions. The paper describes pens, sticky notes, and puzzles as ways to support expression and discussion."
+          "zh": "學生使用 Meta Quest 2 進入 VRChat，以化身探索場景，透過語音與同伴交流，再分享討論結果。學習內容以影片、照片、圖表與互動物件呈現，讓觀察、表達及統整想法能在同一個環境中進行。\n\n氣候行動場景以小型海島國為例，將海平面上升、溫室氣體與能源選擇放進探索任務。論文中的互動設計包括用畫筆繪製或寫下想法、用便利貼統整討論，以及將拼圖放在對應位置。\n\n本頁提供關卡一至關卡三的 VRChat 世界入口，分別連到對應世界。",
+          "en": "Students entered VRChat using Meta Quest 2, explored as avatars, talked with peers through voice chat, and shared their conclusions. Videos, photographs, charts, and interactive objects supported observation, expression, and synthesis within one environment.\n\nThe climate-action scene used a small island setting to connect sea-level rise, greenhouse gases, and energy choices with exploration tasks. The paper described drawing and writing tools, sticky notes for organizing discussion, and puzzles placed in matching locations.\n\nThis page provides separate VRChat world links for Levels 1–3."
         },
         "image": "",
         "caption": {
@@ -329,14 +331,37 @@
           "en": "Outcomes and limitations"
         },
         "body": {
-          "zh": "完成 Unity／VRChat SDK 學習環境的開發協作，相關設計以「支持學生於元宇宙社交互動並結合 STEM 與 SDGs 的沉浸式虛擬實境學習環境開發」於 GCCCE 2024 發表。後續教授的期刊論文也在誌謝中記錄這項開發協作。\n\nGCCCE 2024 論文記錄的是環境設計與開發，發表時尚未完成實證研究。這個階段的成果是虛擬場景、互動設計與平台整合；學習成效仍需另外驗證。",
-          "en": "Completed the Unity/VRChat SDK environment development collaboration. The design was presented at GCCCE 2024, and a later journal paper acknowledged the development contribution.\n\nThe GCCCE 2024 paper reports environment design and development before an empirical study had been completed. Virtual scenes, interaction design, and platform integration are the development outcomes; learning effectiveness requires separate evaluation."
+          "zh": "完成 Unity / VRChat SDK 學習環境的開發協作，相關設計於 GCCCE 2024 發表；本頁保留三個世界入口，讓作品能從文字說明連到實際場景。後續教授的期刊論文也在誌謝中記錄這項開發協作。\n\nGCCCE 2024 論文記錄的是環境設計與開發，發表時尚未完成實證研究。國科會文件則是計畫申請書，其中的研究階段與預期效益不能當作已完成的成效；此處呈現的主要成果是場景、互動設計與平台整合。",
+          "en": "Completed collaborative development of the Unity / VRChat SDK learning environment, with the design presented at GCCCE 2024. Three world links connect this description with the virtual scenes. A later journal article by the project supervisor also acknowledged this development collaboration.\n\nThe GCCCE 2024 paper reported environment design and development before empirical evaluation. The NSTC document is a project proposal, so its planned phases and expected benefits are not completed research findings. The work presented here concerns scene development, interaction design, and platform integration."
         },
         "image": "",
         "caption": {
           "zh": "",
           "en": ""
         }
+      }
+    ],
+    "links": [
+      {
+        "label": {
+          "zh": "關卡一",
+          "en": "Level 1"
+        },
+        "url": "https://vrchat.com/home/launch?worldId=wrld_d06fc968-00e7-4331-9e30-0d4e7de93421"
+      },
+      {
+        "label": {
+          "zh": "關卡二",
+          "en": "Level 2"
+        },
+        "url": "https://vrchat.com/home/launch?worldId=wrld_59e75a22-fe92-41bd-ac14-0b4891c06f2c"
+      },
+      {
+        "label": {
+          "zh": "關卡三",
+          "en": "Level 3"
+        },
+        "url": "https://vrchat.com/home/launch?worldId=wrld_05f00804-24e1-4fb9-9b44-fd26c388e4cb"
       }
     ]
   },
@@ -351,8 +376,8 @@
       "en": "NSTC research project"
     },
     "summary": {
-      "zh": "參與「後疫情時代支持學生進行 VR 內容共創學習活動之活動設計、腳本研發與成效評估」專題研究計畫。",
-      "en": "Participated in an NSTC project on activity design, script development, and effectiveness evaluation for students’ VR content co-creation learning in the post-COVID-19 era."
+      "zh": "以 CoSpaces Edu 協助製作國小高年級 STEAM 教育遊戲與學習素材，並支援小學場域的 VR 合作學習實驗，累積把數位內容帶入實際課堂的經驗。",
+      "en": "Helped create CoSpaces Edu games and learning materials for upper-elementary STEAM activities, and supported VR collaborative-learning experiments in an elementary school."
     },
     "role": {
       "zh": "協助研究群學長姊製作 CoSpaces 數位教育遊戲，內容以國小高年級 STEAM 專題為主，並協助小學場域的 VR 合作學習實驗。",
@@ -366,10 +391,10 @@
       "Collaborative learning"
     ],
     "featured": false,
-    "cover": "",
+    "cover": "uploads/vr-cocreation-cospaces.webp",
     "coverAlt": {
-      "zh": "VR 共創學習活動畫面",
-      "en": "VR co-creation learning activity"
+      "zh": "TWELF 2022 研究簡報中的 CoSpaces Edu 場景編輯介面，呈現角色、環境與素材工具。",
+      "en": "The CoSpaces Edu scene editor shown in the TWELF 2022 research presentation, with characters, environment objects, and asset tools."
     },
     "repo": "",
     "demo": "",
@@ -377,12 +402,12 @@
     "blocks": [
       {
         "heading": {
-          "zh": "計畫與參與工作",
-          "en": "Project and contribution"
+          "zh": "目標與活動背景",
+          "en": "Goals and activity context"
         },
         "body": {
-          "zh": "參與陳政煥教授的學習與教學科技研究群（LIT Research Group），協助「後疫情時代支持學生進行 VR 內容共創學習活動之活動設計、腳本研發與成效評估」研究計畫。\n\n個人工作包括與學長姊共同製作 CoSpaces 教育遊戲，以及支援小學 VR 合作學習實驗。",
-          "en": "As a member of the LIT Research Group, I supported an NSTC project on activity design, collaboration scripts, and evaluation for VR content co-creation.\n\nMy contributions included creating CoSpaces educational games with senior members and supporting an elementary-school VR collaborative-learning experiment."
+          "zh": "參與陳政煥教授的學習與教學科技研究群（LIT Research Group），協助「後疫情時代支持學生進行 VR 內容共創學習活動之活動設計、腳本研發與成效評估」計畫。\n\n計畫以國小高年級 STEAM 專題為範圍，讓學生共同創作並體驗 VR 內容。重點除了製作場景，也在於透過小組討論分配工作、表達想法，再把課程知識轉成看得見的作品。",
+          "en": "Participated in the LIT Research Group and assisted its project on activity design, collaboration scripts, and evaluation for VR content co-creation.\n\nThe project focused on upper-elementary STEAM activities in which students created and experienced VR content together. Group discussion, task sharing, and turning subject knowledge into a visible artifact were central to the activity design."
         },
         "image": "",
         "caption": {
@@ -392,12 +417,57 @@
       },
       {
         "heading": {
-          "zh": "XR 工具學習",
-          "en": "Learning XR tools"
+          "zh": "學習活動與使用流程",
+          "en": "Activities and workflow"
         },
         "body": {
-          "zh": "在多媒體數位學習與行動學習課程中接觸 CoSpaces 與 MAKAR，製作 XR 數位教育遊戲，後續將 CoSpaces 經驗運用於研究群的合作學習素材。",
-          "en": "Used CoSpaces and MAKAR in multimedia and mobile learning courses to create XR educational games, later applying CoSpaces experience to collaborative-learning materials in the research group."
+          "zh": "研究團隊規劃先讓學生熟悉工具，再透過 Padlet 的合作腳本討論創作內容，於 CoSpaces Edu 製作虛擬場景，最後分享作品與回饋。這是 TWELF 2022 文件中的活動規劃，並非已驗證的學習成效。\n\n我的參與是和學長姊共同製作 CoSpaces 教育遊戲與素材，以及協助小學場域的 VR 合作學習實驗，將工具操作與課堂活動接在一起。",
+          "en": "The research team planned an introduction to the tools, discussion guided by collaboration scripts on Padlet, scene creation in CoSpaces Edu, and sharing with feedback. This describes the activity plan in the TWELF 2022 documents rather than established learning outcomes.\n\nMy contribution was helping senior research-group members produce CoSpaces games and materials and supporting VR collaborative-learning experiments at an elementary school."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "工具與素材實作",
+          "en": "Tools and learning materials"
+        },
+        "body": {
+          "zh": "在多媒體數位學習與行動學習課程中接觸 CoSpaces 與 MAKAR，製作 XR 數位教育遊戲，後續把 CoSpaces 經驗用於研究群素材。素材需要同時考慮場景、角色與學習內容的呈現，讓學生能理解並操作。\n\n內容製作沿用 CoSpaces 的場景與互動工具，我主要參與教育遊戲、教材素材與實驗協助。Padlet 合作腳本與 Tableau 資料視覺化，是研究團隊在文件中規劃的配套。",
+          "en": "Used CoSpaces and MAKAR in multimedia and mobile-learning courses to create XR educational games, then applied that CoSpaces experience to research-group materials. Scene objects, characters, and subject content had to work together in a form students could understand and operate.\n\nContent production used the scene and interaction tools in CoSpaces. My contribution concerned educational games, learning materials, and experiment support. Padlet collaboration scripts and Tableau visualizations were supporting elements in the research team’s plan."
+        },
+        "image": "uploads/vr-cocreation-coblocks.webp",
+        "caption": {
+          "zh": "TWELF 2022 研究簡報中的 CoBlocks 編輯介面，示意研究所使用的場景與互動製作工具。",
+          "en": "The CoBlocks editor in the TWELF 2022 research presentation, illustrating the scene and interaction tools used by the research."
+        }
+      },
+      {
+        "heading": {
+          "zh": "從素材製作到課堂使用",
+          "en": "From materials to classroom use"
+        },
+        "body": {
+          "zh": "VR 素材需要放在實際課堂中使用，不能只看電腦上的呈現。學生是否熟悉操作、能否理解任務，以及小組如何合作，都會影響活動進行。\n\n參與素材製作與現場協助，讓我開始從使用者與教學情境檢視數位作品，也延伸出後續以 Unity 開發互動學習環境的經驗。",
+          "en": "VR materials had to work in a classroom, beyond how they looked on a development screen. Familiarity with the controls, clarity of the task, and group collaboration all shaped the activity.\n\nHelping with materials and classroom work encouraged me to consider users and teaching contexts when reviewing digital experiences, alongside later work with Unity learning environments."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "成果與參與範圍",
+          "en": "Outcomes and scope of contribution"
+        },
+        "body": {
+          "zh": "累積 CoSpaces 教育遊戲與素材協作、小學 VR 合作學習實驗支援的經驗。封面與本頁介面圖片取自 TWELF 2022 研究簡報，用來說明活動所使用的平台與工具。\n\nTWELF 2022 論文與簡報由研究團隊發表，描述活動設計與平台規劃，這裡作為計畫背景引用。個人貢獻以素材製作及實驗協助為範圍，學習成效則需要另外的研究資料驗證。",
+          "en": "Gained experience contributing to CoSpaces educational games and materials and supporting elementary-school VR collaborative-learning experiments. The cover and editor images come from the TWELF 2022 research presentation to explain the tools used in the activities.\n\nThe TWELF 2022 paper and presentation were authored by the research team and describe activity design and platform planning. They provide project context here. My contribution concerns materials and experiment support; learning outcomes require separate evaluation data."
         },
         "image": "",
         "caption": {
@@ -405,7 +475,8 @@
           "en": ""
         }
       }
-    ]
+    ],
+    "links": []
   },
   {
     "id": "ai-cup-2022",
@@ -414,7 +485,7 @@
       "en": "AI CUP 2022 crop image classification"
     },
     "category": {
-      "zh": "深度學習競賽 · Private Leaderboard 第 37／151 名",
+      "zh": "深度學習競賽 · Private Leaderboard 第 37 / 151 名",
       "en": "Deep learning competition · 37th of 151 on the private leaderboard"
     },
     "summary": {
@@ -436,10 +507,10 @@
       "Image classification"
     ],
     "featured": false,
-    "cover": "",
+    "cover": "uploads/aicup-farmland.webp",
     "coverAlt": {
-      "zh": "",
-      "en": ""
+      "zh": "TEAM_855 競賽簡報使用的農地照片，呈現作物與建物、天空等背景同時出現的辨識情境。",
+      "en": "A farmland photograph from the TEAM_855 competition presentation, showing crops alongside buildings, sky, and other background elements."
     },
     "repo": "",
     "demo": "",
@@ -447,12 +518,12 @@
     "blocks": [
       {
         "heading": {
-          "zh": "從課程到競賽",
-          "en": "From coursework to competition"
+          "zh": "目標與參賽背景",
+          "en": "Goals and competition context"
         },
         "body": {
-          "zh": "先在人工智慧概論課程接觸 TensorFlow 與 Python，之後於深度學習課程學習 PyTorch，透過課程資源、錄影回放與週六競賽工作坊準備 AI CUP。",
-          "en": "I first studied TensorFlow and Python in an introductory AI course, then learned PyTorch in a deep learning course. Course resources, recorded lectures, and Saturday workshops supported competition preparation."
+          "zh": "農地調查需要從大量照片辨識作物種類，但照片常包含天空、建物與雜草，作物在不同位置、距離與光線下也有不同外觀。競賽把這些實際影像交給參賽團隊，嘗試以模型產生可提交的分類結果。\n\n先在人工智慧概論接觸 TensorFlow 與 Python，之後於深度學習課程學習 PyTorch，透過課程資源、錄影回放與週六工作坊準備 AI CUP。",
+          "en": "Farmland surveys require identifying crops in large numbers of photographs, often alongside sky, buildings, and weeds. Position, distance, and lighting also change the appearance of crops. The competition asked teams to turn these images into classification submissions.\n\nI first encountered TensorFlow and Python in an introductory AI course, then learned PyTorch in a deep-learning course and prepared through class resources, recordings, and Saturday workshops."
         },
         "image": "",
         "caption": {
@@ -462,12 +533,27 @@
       },
       {
         "heading": {
-          "zh": "資料規模與影像前處理",
-          "en": "Dataset scale and image preprocessing"
+          "zh": "資料規模與前處理",
+          "en": "Data scale and preprocessing"
         },
         "body": {
-          "zh": "訓練集超過 80,000 張圖片、約 157 GB，不能直接完整投入訓練。團隊先把影像裁切為 512×512，保留具有明顯作物特徵的區域，再依作物位置與背景干擾人工篩選；第一版模型後，又針對表現較弱的胡蘿蔔、玉米、火龍果、花生、南瓜與黃豆整理第二版資料集。",
-          "en": "The training set contained more than 80,000 images and about 157 GB of data, so it could not be used directly. The team cropped images to 512×512 regions with visible crop features, then manually filtered background noise and created a second dataset for weaker classes such as carrot, corn, dragon fruit, peanut, pumpkin, and soybean."
+          "zh": "訓練影像超過 80,000 張、約 157 GB，團隊先依作物常見位置裁切為 512×512，再人工挑選作物特徵清楚、背景干擾較少的圖片。例如甘蔗通常出現在較高處，花生與黃豆的位置則較低，裁切位置需要分開考慮。\n\n第一版模型後，再針對胡蘿蔔、玉米、火龍果、花生、南瓜與黃豆整理資料，讓前處理與模型結果形成反覆檢查的流程。人工篩選由組員分工完成。",
+          "en": "The training data contained more than 80,000 images totaling about 157 GB. The team cropped 512×512 regions according to typical crop positions, then manually retained clear crop features with less background interference. Sugarcane tended to appear higher in the image, while peanuts and soybeans appeared lower.\n\nAfter the first model, the team revisited carrot, corn, dragon fruit, peanut, pumpkin, and soybean images. Preprocessing and model output informed repeated review, with manual filtering shared among teammates."
+        },
+        "image": "uploads/aicup-farmland.webp",
+        "caption": {
+          "zh": "原始農地照片取自 TEAM_855 簡報；團隊依作物位置擷取 512×512 特徵區域，再進行人工篩選。",
+          "en": "An original farmland photograph from the TEAM_855 presentation. The team extracted 512×512 feature regions based on crop position and manually filtered them."
+        }
+      },
+      {
+        "heading": {
+          "zh": "模型訓練與個人實作",
+          "en": "Model training and implementation"
+        },
+        "body": {
+          "zh": "使用 Anaconda 的 Python / PyTorch 環境，採老師提供的已訓練模型參數進行遷移式訓練，包含 InceptionV3、EfficientNet-B0 與 EfficientNet-B2。實作重點是運用既有架構，完成資料與訓練流程的整合。\n\n我的主要工作是理解與整合訓練程式，串起訓練集輸入、模型建立、評估及輸出；組員共同整理資料，也提供訓練設備。這個過程需要把各階段的資料與模型檔案對應起來，才能持續重跑與比較。",
+          "en": "Used Python / PyTorch in Anaconda and transferred from model weights supplied by the instructor, including InceptionV3, EfficientNet-B0, and EfficientNet-B2. The implementation focused on using existing architectures to integrate data processing and training.\n\nMy main work was understanding and integrating the training code across data input, model construction, evaluation, and output. Teammates shared data preparation and provided training hardware; keeping datasets and model files aligned was necessary for repeated runs and comparison."
         },
         "image": "",
         "caption": {
@@ -477,12 +563,12 @@
       },
       {
         "heading": {
-          "zh": "模型訓練與反覆修正",
-          "en": "Iterative model training"
+          "zh": "輸出流程與團隊成果",
+          "en": "Output workflow and team result"
         },
         "body": {
-          "zh": "在 Anaconda 的 Python／PyTorch 環境中，先以 InceptionV3 訓練，再以整理後的資料進行 InceptionV3 與 EfficientNet-B0 的遷移式訓練。測試影像也會切成 20 份進行評估，從可能預測錯誤的結果回頭整理資料，最後再訓練 EfficientNet-B2。",
-          "en": "In an Anaconda Python/PyTorch environment, the team first trained InceptionV3, then used the curated data for transfer learning with InceptionV3 and EfficientNet-B0. Test images were also split into 20 crops for evaluation; likely errors were reviewed and used to train a final EfficientNet-B2 model."
+          "zh": "測試影像先切成 20 份進行預測，再彙整每張原圖的分類結果。團隊將三個模型的輸出 CSV 交給 XGBoost 集成，產生最後提交檔 submit_X2.csv。README 也依裁切、訓練、評估、模型輔助篩選與提交輸出的順序整理程式入口。\n\nTEAM_855 的 Private Leaderboard 得分為 0.9838242、151 隊中排名第 37 名，位居前 25%；官方競賽頁可核對隊伍成績。這是競賽指標分數，並非所有作物都達到相同的分類準確率。",
+          "en": "Test photographs were divided into 20 crops for prediction, then aggregated into one classification per original image. The team combined the three models’ output CSV files with XGBoost to produce submit_X2.csv. The README organized entry points for cropping, training, evaluation, model-assisted filtering, and submission output.\n\nTEAM_855 scored 0.9838242 on the Private Leaderboard and ranked 37th of 151 teams, within the top 25%. The official competition page lists the team score. This competition metric does not mean every crop class achieved the same accuracy."
         },
         "image": "",
         "caption": {
@@ -492,33 +578,27 @@
       },
       {
         "heading": {
-          "zh": "模型輸出與集成結果",
-          "en": "Model outputs and ensemble"
+          "zh": "錯誤分析與後續改進",
+          "en": "Error analysis and improvements"
         },
         "body": {
-          "zh": "我的程式工作涵蓋訓練集輸入、模型建立、測試集評估與結果輸出。團隊將 InceptionV3、EfficientNet-B0 與 EfficientNet-B2 的輸出 CSV 再交給 XGBoost 集成，產生最後的 submit_X2.csv；Private Leaderboard 得分為 0.9838242，151 隊中排名第 37 名。",
-          "en": "My code work covered training input, model construction, test evaluation, and result output. The team fed the CSV outputs from InceptionV3, EfficientNet-B0, and EfficientNet-B2 into XGBoost to create submit_X2.csv. The private leaderboard score was 0.9838242, ranking 37th of 151 teams."
+          "zh": "南瓜是當時較弱的類別，團隊推測雜草與南瓜葉的相似特徵造成干擾，也曾完成其他模型，但已超過提交期限，沒有將未提交結果寫成成績改善。\n\n回顧當時流程，曾將測試影像篩選後加入後續訓練，因此競賽分數不能直接當作完全獨立測試下的泛化證明。若重新進行，會先區分訓練、驗證與最終測試資料，固定前處理流程，再以各類別表現檢查模型弱點。",
+          "en": "Pumpkin was a weaker class. The team suspected that similar features in weeds and pumpkin leaves caused confusion. Other models finished after the submission deadline, so their unsubmitted outputs were not treated as demonstrated score improvements.\n\nThe historical workflow also selected test images for later training, so the competition score is not proof of generalization on a fully independent test set. A renewed approach would separate training, validation, and final test data, fix preprocessing, and inspect per-class performance."
         },
         "image": "",
         "caption": {
           "zh": "",
           "en": ""
         }
-      },
+      }
+    ],
+    "links": [
       {
-        "heading": {
-          "zh": "錯誤分析與限制",
-          "en": "Error analysis and limitations"
+        "label": {
+          "zh": "官方競賽與成果",
+          "en": "Official competition and results"
         },
-        "body": {
-          "zh": "檢查結果時發現南瓜是較弱的類別，雜草背景可能與南瓜葉相似，影響 F1-score。團隊也曾訓練其他模型，但完成時已超過上傳期限，因此無法確認是否改善最終成績。",
-          "en": "Pumpkin was a weaker class during error review, partly because weed backgrounds could resemble pumpkin leaves and reduce the F1 score. The team also trained additional models, but they finished after the submission deadline, so their effect on the final result could not be confirmed."
-        },
-        "image": "",
-        "caption": {
-          "zh": "",
-          "en": ""
-        }
+        "url": "https://www.aidea-web.tw/topic/93c8c26b-0e96-44bc-9a53-1c96353ad340"
       }
     ]
   },
@@ -533,8 +613,8 @@
       "en": "Independent learning · Web development"
     },
     "summary": {
-      "zh": "從高中使用 Blogger 記錄生活，到大學使用 WordPress 建立個人網站，持續學習網頁呈現、內容管理與資料庫基礎。",
-      "en": "From blogging with Blogger in high school to building a WordPress site at university, I developed experience with web presentation, content management, and database fundamentals."
+      "zh": "從高中使用 Blogger、大學以 WordPress 建站，到現在整理雙語個人網站，將科技學習與單車旅行持續記錄，也練習讓不同裝置上的內容更容易閱讀。",
+      "en": "From Blogger in high school and WordPress at university to a bilingual personal website, documenting technology learning and cycling while improving how the content reads across devices."
     },
     "role": {
       "zh": "自行探索免費架站資源、建立與調整個人部落格；學習 PHP、MySQL、HTML5 與 CSS，整理科技及單車旅行內容。",
@@ -548,23 +628,38 @@
       "HTML / CSS"
     ],
     "featured": false,
-    "cover": "",
+    "cover": "uploads/4ea15fd4-b4e7-4a46-a787-fe49aebbcc10.jpg",
     "coverAlt": {
-      "zh": "",
-      "en": ""
+      "zh": "目前個人網站的首頁畫面，包含黃色 Z 標誌、個人介紹與照片。",
+      "en": "The current personal website homepage, featuring the yellow Z mark, personal introduction, and portrait."
     },
-    "repo": "",
+    "repo": "https://github.com/guozhuyin/guozhuyin.github.io",
     "demo": "https://zhuyin.epizy.com/",
     "paper": "",
     "blocks": [
       {
         "heading": {
-          "zh": "持續經營的個人入口",
-          "en": "A continuing personal presence"
+          "zh": "目標與內容",
+          "en": "Purpose and content"
         },
         "body": {
-          "zh": "高二開始使用 Blogger，大二進一步接觸 WordPress，使用網路上的免費資源建置 zhuyin.epizy.com。網頁學習包含 PHP、MySQL、HTML5 與 CSS。",
-          "en": "I started using Blogger in high school and moved into WordPress at university, building zhuyin.epizy.com with freely available resources. My web studies included PHP, MySQL, HTML5, and CSS."
+          "zh": "高二開始使用 Blogger，大二進一步接觸 WordPress，利用免費架站資源建立 zhuyin.epizy.com。網站既是練習網頁建置的地方，也用來保存科技學習與單車環島紀錄。",
+          "en": "Started with Blogger in high school, then used WordPress and free hosting resources at university to build zhuyin.epizy.com. The site became both a place to learn web publishing and a record of technology learning and cycling trips."
+        },
+        "image": "",
+        "caption": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "heading": {
+          "zh": "建站與內容管理",
+          "en": "Site setup and content management"
+        },
+        "body": {
+          "zh": "自行探索架站資源、建立與調整 WordPress 部落格，透過文章、分類與圖片管理長期累積的內容；過程中學習 PHP、MySQL、HTML5 與 CSS，理解頁面呈現、資料與內容管理之間的關係。",
+          "en": "Explored hosting resources, set up and customized a WordPress blog, and managed accumulated writing through posts, categories, and images. Along the way I studied PHP, MySQL, HTML5, and CSS and how presentation, data, and content management connect."
         },
         "image": "",
         "caption": {
@@ -572,6 +667,7 @@
           "en": ""
         }
       }
-    ]
+    ],
+    "links": []
   }
 ]
